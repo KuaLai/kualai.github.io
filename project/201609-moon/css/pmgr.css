@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/*字型*/
+/*常用*/
+/*陰影*/
+/*漸層*/
+/*三角形*/
+/*瀏覽器*/
+/* $smw: $lgw + 20;*/
+/*等分*/
+/*絕對上下左右置中*/
+/*對齊&置中*/
+/*動畫*/
+/*旋轉*/
+/*傾斜*/
+.pop-wrap {
+  z-index: 10000002;
+}
+
+.pop-inner {
+  background: #6D6B6B;
+  border-radius: 5px;
+}
+
+.pop-gctrl {
+  position: absolute;
+  left: 8px;
+  top: 6px;
+}
+
+.pop-close, .pop-prev, .pop-next {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+
+.pop-expand {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: -42px 0;
+  right: 33px;
+  visibility: hidden;
+  display: block;
+  text-decoration: none;
+  top: 6px;
+}
+
+.pop-prev {
+  background-position: 0 0;
+  left: 0;
+  top: 0;
+}
+
+.pop-next {
+  background-position: -21px 0;
+  left: 25px;
+  top: 0;
+}
+
+.pop-loader {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url(../img/poploader.gif);
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -16px 0 0 -16px;
+  overflow: hidden;
+}
+
+.pop-error {
+  text-align: center;
+  color: #fff;
+}
+
+@media screen\0 {
+  .nav-sub-w {
+    background: url(data:);
+  }
+}
+.pop-wrap {
+  -webkit-transform: translateZ(0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000002;
+  width: 100%;
+  height: 100%;
+  /*overflow:hidden;*/
+  _position: absolute;
+  display: none;
+}
+
+.pop-inner {
+  position: relative;
+  top: 50%;
+  _top: 0;
+  zoom: 1;
+  background: url(../img/popup-bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.pop-content {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.pop-masklayer {
+  -webkit-transform: translateZ(0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000001;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  _position: absolute;
+  opacity: .8;
+  display: none;
+}
+
+@media \0screen\,screen\9 {
+  .pop-masklayer {
+    filter: alpha(opacity=80);
+  }
+}
+.pop-close {
+  /*display: none;*/
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 111;
+  right: 170px;
+  top: 0px;
+  opacity: 0.8;
+}
+.pop-close:hover {
+  opacity: 1;
+}
+
+.main-contents-wrapper {
+  display: none;
+}
+
+.main-contents {
+  width: 530px;
+  height: 445px;
+  position: relative;
+}
+
+.main-contents__txt dt {
+  background: #336600;
+  border-radius: 20px;
+  float: left;
+  color: #FFF;
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 5px;
+  padding-bottom: 0;
+  padding-left: 5px;
+}
+.main-contents__txt p {
+  color: #336600;
+  line-height: 20px;
+}
+
+#cancel {
+  position: relative;
+  top: -80px;
+  left: -20px;
+  width: 124px;
+  line-height: 47px;
+  text-align: center;
+  margin: 0 auto;
+  background: transparent url("../img/btn-cc-w.png") left top no-repeat;
+}
+#cancel a {
+  color: #1c212d;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.event-wrap {
+  position: relative;
+  width: 917px;
+  height: 303px;
+  background: transparent url("../img/bg-attr01.png") center top no-repeat;
+}
+.event-content {
+  position: absolute;
+  width: 100%;
+  top: 135px;
+}
+.event-content input {
+  background: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 100%;
+  line-height: 86px;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.event-content__input {
+  width: 773px;
+  height: 86px;
+  margin: 0 auto;
+  line-height: 86px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background: transparent url("../img/img-attr-blue.png") left top no-repeat;
+}
+.event-content__input-r {
+  background: transparent url("../img/img-attr-red.png") left top no-repeat;
+}
+.event ::-webkit-input-placeholder {
+  color: #fff !important;
+}
+.event ::-moz-input-placeholder {
+  color: #fff !important;
+}

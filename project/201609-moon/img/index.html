@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <ul>
+        <li>HOUR:<span id="lb_hr"></span></li>
+        <li>MIN:<span id="lb_min"></span></li>
+        <li>SEC:<span id="lb_sec"></span></li>
+        <li>MiLLSEC:<span id="lb_millSec"></span></li>
+    </ul>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <script src="counter.js"></script>
+
+    <script>
+       var counter = new KuaCounter({
+            countHourEle: $("#lb_hr"),  //小時
+            countMinEle: $("#lb_min"),  //分鐘
+            countSecEle: $("#lb_sec"),  //秒
+            countMillSec: $("#lb_millSec"), //毫秒
+            targetDateTime: new Date("2016-08-31 11:30:00") //倒數目標時間
+       });
+       counter.start();
+
+   </script>
+</body>
+
+</html>
