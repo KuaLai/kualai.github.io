@@ -1684,7 +1684,8 @@ footer .footer-fb {
 }
 
 .mcList {
-  float: left;
+  /* float: left; */
+  display: inline-block;
   color: #fff;
   width: 265px;
   margin: 8px 0 0 0;
@@ -1692,7 +1693,7 @@ footer .footer-fb {
 }
 .mcList:nth-child(9), .mcList:nth-child(10) {
   border-bottom: none;
-  margin: 8px 0 10px 0;
+  /* margin: 8px 0 10px 0; */
 }
 .mcList__table {
   width: 540px;
