@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/customscroll.css">
+    <link rel="stylesheet" href="css/popmgr.css">
+    <style type="text/css">
+        html { min-width: 0; overflow: hidden;}
+        body { background: none;}
+    </style>
+</head>
+
+<body>
+    <div class="zoneBot">
+        <div class="zoneListContent J-evts-c">
+        <div id="cancle" class="pop-close"></div>
+            <div class="zoneMission missionBox01">
+                <div class="mistitle title-qa"></div>
+                <div class="zoneContent cscroll-filter vertical2" id="J-s">
+                    <div class="cscroll-main">
+                        <ul class="qaBox">
+                            <li>Ｑ：現有玩家的資格條件是什麼？</li>
+                            <li>Ａ：於 2015/06/07 後登入過英雄聯盟並獲得至少一場勝利的召喚師都屬於現有玩家。</li>
+                            <li>Ｑ：新血、回鍋玩家的條件是什麼？</li>
+                            <li>Ａ：於 2015/06/07 00:00後從未登入過英雄聯盟的召喚師屬於回鍋玩家，2015/09/07 12:00後新創帳號的召喚師則屬於新血玩家。</li>
+                            <li>Ｑ：我可以跟多少人綁定帳號？</li>
+                            <li>Ａ：現有玩家才能產生序號，可以提供不限人數的新血及回鍋玩家綁定，新血及回鍋玩家則只能各與一位現有玩家進行綁定。</li>
+                            <li>Ｑ：哪些對戰模式符合任務條件？</li>
+                            <li>Ａ：對戰模式僅限玩家 vs 玩家與玩家 vs 電腦的所有對戰模式，其餘包含新手教學、自訂模式等等並無法累積任務條件。</li>
+                            <li>Ｑ：若我已經擁有了活動獎勵，我可以獲得什麼？</li>
+                            <li>Ａ：若召喚師已擁有「鐵拳無敵守衛造型」，將獲得 140 聯盟幣，另外回鍋玩家若已擁有全部史詩造型，在轉點 1400 貝殼幣以上時將額外獲得 510 聯盟幣！</li>
+                            <li>Q：好友共同打場的任務，可以同時完成不同階段的任務嗎？</li>
+                            <li>Ａ：階段任務無法同時進行，需先完成前一階段後才能進行第二階段的任務。</li>
+                            <li>Ｑ：回鍋好禮 Bonus 的權力點最高可以獲得多少？</li>
+                            <li>Ａ：只要符合資格，依據時間比例計算，最少都可獲得 10,000 點權力點，最高上限可獲得 40,000 權力點。</li>
+                            <li>Ｑ：請問聯盟幣折價券要怎麼使用呢？</li>
+                            <li>Ａ：至【線上商城】登入競時通帳號密碼後，就可使用聯盟幣折價券以優惠的價格購買想要的造型，每個造型限用一張折價券喔！</li>
+                            <li>Ｑ：請問聯盟幣折價券有期限嗎？</li>
+                            <li>Ａ：有喔！從您獲得聯盟幣折價券的時間往後算 30 天，過期的聯盟幣折價券就無法在線上商城中使用囉！</li>
+                            <li>Ｑ：獎勵多久內會派發完成？</li>
+                            <li>Ａ：所有獎勵都會在達成條件後一天內派發完畢。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/customscroll.min.js"></script>
+<script>
+document.getElementById('cancle').onclick = function() {
+    parent.PopMgr.getPopBox().closePop()
+    return false;
+}
+</script>
+<script>
+window.onload = function() {
+    new customScroll(document.getElementById('J-s'))
+}
+</script>
+
+</html>

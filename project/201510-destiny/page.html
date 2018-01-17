@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/customscroll.css">
+    <link rel="stylesheet" href="css/popmgr.css">
+    <style type="text/css">
+        html { min-width: 0; overflow: hidden;}
+        body { background: none;}
+        #cancle { top: 60px;}
+    </style>
+</head>
+
+<body>
+    <div class="zoneBot honorRoll">
+        <div class="zoneContent J-evts-c">
+            <div id="cancle" class="pop-close"></div>
+            <div class="zoneMission">
+                <div class="titleTxt">
+                    傳說中的勇者除了要具備過人的運氣，還需要有超凡的耐心與實力
+                    <br/>完成史詩任務的召喚師才夠資格在此留下你的大名供人瞻仰
+                    <span>你想挑戰史詩任務？ 首先你需要有一個史詩任務！</span>
+                </div>
+                <div class="heroList">
+                    <table cellspacing="0" border="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>召喚師名稱</th>
+                                <th>任務內容</th>
+                                <th>完成時間</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ＩＤ最多有八個字</td>
+                                <td>使用弗拉迪米爾 五連殺 10次 </td>
+                                <td>2015/10/06 18: 23</td>
+                            </tr>
+                            <tr>
+                                <td>ＩＤ最多有八個字</td>
+                                <td>使用弗拉迪米爾 五連殺 10次 </td>
+                                <td>2015/10/06 18: 23</td>
+                            </tr>
+                            <tr>
+                                <td>ＩＤ最多有八個字</td>
+                                <td>使用弗拉迪米爾 五連殺 10次 </td>
+                                <td>2015/10/06 18: 23</td>
+                            </tr>
+                            <tr>
+                                <td>ＩＤ最多有八個字</td>
+                                <td>使用弗拉迪米爾 五連殺 10次 </td>
+                                <td>2015/10/06 18: 23</td>
+                            </tr>
+                            <tr>
+                                <td>ＩＤ最多有八個字</td>
+                                <td>使用弗拉迪米爾 五連殺 10次 </td>
+                                <td>2015/10/06 18: 23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 超過 5 筆時 使用頁數分頁 -->
+                    <ul class="page">
+                        <li><a href="javascript:;"><span class="u-npgprev"></span></a></li>
+                        <li style="width:60px;"><a href="">首頁</a></li>
+                        <li>
+                            <s>1</s>
+                        </li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">6</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">10</a></li>
+                        <li style="width:60px;"><a href="">最末頁</a></li>
+                        <li><a href="javascript:;"><span class="u-npgnext"></span></a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/customscroll.min.js"></script>
+<script>
+document.getElementById('cancle').onclick = function() {
+    parent.PopMgr.getPopBox().closePop()
+    return false;
+}
+</script>
+
+</html>

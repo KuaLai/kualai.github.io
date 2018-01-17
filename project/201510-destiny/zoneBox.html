@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/popmgr.css">
+    <style type="text/css">
+        html { min-width: 0; overflow: hidden;}
+        body { background: none;}
+    </style>
+</head>
+
+<body>
+    <div class="zonebingoMassage">
+        <div class="massageContent J-evts-c">
+            <div id="cancle" class="pop-close"></div>
+            <div class="bingoMassage m01" style="display:none;">
+                <div class="ssTxt">注意！ 每位召喚師僅有五次挑戰命運的機會</div>
+                <div class="massageBox">剩餘<span>5</span>次機會</div>
+                <div class="massageBtn">
+                    <a class="btn-yellow" href="javascript:;">挑戰命運</a>
+                    <a class="btn-gray" href="javascript:;">讓我再想想</a>
+                </div>
+            </div>
+            <div class="bingoMassage m02" style="display:none;">
+                <div class="ssTxt">注意！ 每位召喚師僅有五次挑戰命運的機會</div>
+                <div class="massageBox">剩餘<span>4</span>次機會</div>
+                <div class="massageBox02">未完成任務卻進行下一輪拉霸<span><u>視同放棄現有任務</u></span>
+                    <br/> 放棄任務則代表能領取的獎勵 <span>神秘卡牌</span> 會減少1張</div>
+                <div class="massageBtn">
+                    <a class="btn-yellow" href="javascript:;">分享至FaceBook</a>
+                    <a class="btn-yellow" href="javascript:;">重新挑戰命運</a>
+                    <div class="mTxt">第一次分享任務至FaceBook，可再獲得重新拉霸機會</div>
+                </div>
+            </div>
+            <div class="bingoMassage m03" style="display:none;">
+                <div class="ssTxt">注意！ 每位召喚師僅有五次挑戰命運的機會</div>
+                <div class="massageBox">剩餘<span>3</span>次機會</div>
+                <div class="massageBox02">未完成任務卻進行下一輪拉霸<span><u>視同放棄現有任務</u></span>
+                    <br/> 放棄任務則代表能領取的獎勵 <span>神秘卡牌</span> 會減少1張</div>
+                <div class="massageBtn">
+                    <a class="btn-yellow" href="javascript:;">確 認</a>
+                    <a class="btn-gray" href="javascript:;">讓我再想想</a>
+                    <div class="mTxt">點下確認後將扣除一次拉霸機會</div>
+                </div>
+            </div>
+            <div class="bingoMassage m04">
+                <div class="ssTxt">史詩級任務選擇了你</div>
+                <div class="massageBox">你的抉擇又是如何？</div>
+                <div class="massageBox02">完成史詩任務可以獲得獎勵外，<br/> 還可踏入傳說中的勇者殿堂供其他召喚師瞻仰你的風采<br/>但承認失敗也是勇氣的一種，只要你願意分享
+                </div>
+                <div class="missionTxt">「使用弗拉迪米爾 進行遊戲場數 150」</div>
+                <div class="FBtxt">至FB即可免費獲得重新拉霸機會一次</div>
+                <div class="massageBtn">
+                    <a class="btn-yellow" href="javascript:;">分享至FaceBook</a>
+                    <a class="btn-gray" href="javascript:;">讓我再想想</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script>
+document.getElementById('cancle').onclick = function() {
+    parent.PopMgr.getPopBox().closePop()
+    return false;
+}
+</script>
+
+</html>

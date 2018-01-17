@@ -1,0 +1,1091 @@
+@charset "UTF-8";
+* {
+  box-sizing: content-box;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: Arial, "微軟正黑體", "新細明體", "黑體", Tahoma, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+img {
+  width: 100%;
+  border: 0px;
+  vertical-align: bottom;
+}
+
+ul, li, p, ol, figure {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  display: block;
+  color: #2a2a2a;
+  outline: none;
+  hlbr: expression(this.onFocus=this.blur());
+}
+a:visited {
+  color: #2a2a2a;
+}
+a:focus {
+  outline: none;
+}
+a:hover {
+  outline: 0;
+  color: #ff6666;
+}
+a:active {
+  outline: 0;
+  color: #ff9999;
+}
+
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+  display: block;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: yellow;
+  color: black;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-siaing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  height: 0;
+}
+
+.icon-sprite, .icon-card, .icon-n1-f, .icon-n1, .icon-n2-f, .icon-n2, .icon-n3-f, .icon-n3, .icon-n4-f, .icon-n4, .icon-n5-f, .icon-n5, .icon-n6-f, .icon-n6, .icon-n7-f, .icon-n7, .icon-n8-f, .icon-n8, .icon-n9-f, .icon-n9 {
+  background-image: url('../img/icon-sb42c6da137.png');
+  background-repeat: no-repeat;
+}
+
+.btn-sprite, .btn-arrow, .btn-close, .btn-fb, .btn-gray, .btn-login-a, .btn-login, .btn-nav-01-a, .btn-nav-01, .btn-nav-02-a, .btn-nav-02, .btn-nav-03-a, .btn-nav-03, .btn-nav-04-a, .btn-nav-04, .btn-yellow {
+  background-image: url('../img/btn-s07bc6c62d7.png');
+  background-repeat: no-repeat;
+}
+
+.title-sprite, .title-events, .title-notice, .title-qa {
+  background-image: url('../img/title-s305a3861ba.png');
+  background-repeat: no-repeat;
+}
+
+.icon-card {
+  background-position: 0 0;
+}
+
+.icon-n1-f {
+  background-position: 0 -42px;
+}
+
+.icon-n1 {
+  background-position: 0 -86px;
+}
+
+.icon-n2-f {
+  background-position: 0 -130px;
+}
+
+.icon-n2 {
+  background-position: 0 -174px;
+}
+
+.icon-n3-f {
+  background-position: 0 -218px;
+}
+
+.icon-n3 {
+  background-position: 0 -262px;
+}
+
+.icon-n4-f {
+  background-position: 0 -306px;
+}
+
+.icon-n4 {
+  background-position: 0 -350px;
+}
+
+.icon-n5-f {
+  background-position: 0 -394px;
+}
+
+.icon-n5 {
+  background-position: 0 -438px;
+}
+
+.icon-n6-f {
+  background-position: 0 -482px;
+}
+
+.icon-n6 {
+  background-position: 0 -526px;
+}
+
+.icon-n7-f {
+  background-position: 0 -570px;
+}
+
+.icon-n7 {
+  background-position: 0 -614px;
+}
+
+.icon-n8-f {
+  background-position: 0 -658px;
+}
+
+.icon-n8 {
+  background-position: 0 -702px;
+}
+
+.icon-n9-f {
+  background-position: 0 -746px;
+}
+
+.icon-n9 {
+  background-position: 0 -790px;
+}
+
+.btn-arrow {
+  background-position: 0 0;
+}
+
+.btn-close {
+  background-position: 0 -66px;
+}
+
+.btn-fb {
+  background-position: 0 -138px;
+}
+
+.btn-gray {
+  background-position: 0 -204px;
+}
+
+.btn-login-a {
+  background-position: 0 -264px;
+}
+
+.btn-login {
+  background-position: 0 -317px;
+}
+
+.btn-nav-01-a {
+  background-position: 0 -370px;
+}
+
+.btn-nav-01 {
+  background-position: 0 -415px;
+}
+
+.btn-nav-02-a {
+  background-position: 0 -460px;
+}
+
+.btn-nav-02 {
+  background-position: 0 -505px;
+}
+
+.btn-nav-03-a {
+  background-position: 0 -550px;
+}
+
+.btn-nav-03 {
+  background-position: 0 -595px;
+}
+
+.btn-nav-04-a {
+  background-position: 0 -640px;
+}
+
+.btn-nav-04 {
+  background-position: 0 -685px;
+}
+
+.btn-yellow {
+  background-position: 0 -730px;
+}
+
+.title-events {
+  background-position: 0 0;
+}
+
+.title-notice {
+  background-position: 0 -77px;
+}
+
+.title-qa {
+  background-position: 0 -161px;
+}
+
+.zoneBot {
+  position: relative;
+  width: 1066px;
+  height: 816px;
+  margin: 0 auto;
+  background: transparent url("../img/tfBg.png") left top no-repeat;
+}
+
+.honorRoll {
+  width: 1920px;
+  height: 878px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background: transparent url("../img/hallBg.png") left top no-repeat;
+}
+.honorRoll .zoneContent {
+  position: relative;
+  top: 280px;
+  width: 700px;
+  margin: 0 auto;
+}
+.honorRoll .titleTxt {
+  text-align: center;
+}
+.honorRoll .titleTxt span {
+  display: block;
+  color: #ffff00;
+  line-height: 80px;
+}
+.honorRoll .heroList {
+  padding: 20px;
+  background: rgba(61, 36, 10, 0.8);
+}
+.honorRoll table th {
+  font-size: 18px;
+  padding: 8px;
+  color: #35210a;
+  background: #8a6b52;
+  border-right: 1px solid #35210a;
+}
+.honorRoll table th:last-child {
+  border-right: none;
+}
+.honorRoll table td {
+  text-align: center;
+  padding: 10px;
+}
+.honorRoll table tbody tr:nth-child(even) {
+  background: rgba(138, 107, 82, 0.3);
+}
+
+.zoneListContent {
+  position: absolute;
+  top: 250px;
+  left: 70px;
+  width: 700px;
+  color: #fff;
+}
+
+.title-qa {
+  width: 112px;
+  height: 53px;
+  margin: 0 15px 15px;
+}
+
+.title-notice {
+  width: 248px;
+  height: 64px;
+  margin: 0 0 0 20px;
+}
+
+.title-events {
+  width: 247px;
+  height: 57px;
+  margin: 0 0 0 30px;
+}
+
+.vertical2:before, .vertical2::before {
+  content: ' ';
+  position: absolute;
+  z-index: 2;
+  left: -5px;
+  bottom: -5px;
+  width: 680px;
+  height: 137px;
+  background: transparent url("../img/mask-bot.png") left top no-repeat;
+}
+
+.qaBox {
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.qaBox li {
+  padding: 8px 0 0;
+}
+.qaBox li:nth-child(odd) {
+  color: #ffcc00;
+}
+.qaBox li:nth-child(even) {
+  border-bottom: 1px dashed #fff;
+  padding: 0 0 8px 0;
+}
+.qaBox li:last-child {
+  border-bottom: none;
+}
+
+.notesBox {
+  padding: 0 0 20px 20px;
+  font-size: 15px;
+}
+.notesBox li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #fff;
+}
+.notesBox li:last-child {
+  border-bottom: none;
+}
+
+.nuList, .nuList li {
+  list-style-type: decimal;
+}
+
+.eventBox {
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+.eventBox .zoneTxt {
+  width: 630px;
+  margin: 0 auto;
+}
+.eventBox .zoneTxt span {
+  display: block;
+  color: #ff0000;
+}
+
+.zoneEvents {
+  background: rgba(42, 52, 99, 0.5);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  padding: 25px;
+  margin: 15px auto;
+  width: 580px;
+}
+.zoneEvents .zoneTitle {
+  font-size: 18px;
+  border-bottom: 1px solid #fff;
+  padding: 0 0 6px;
+}
+.zoneEvents .content {
+  padding: 6px 0 0 0;
+}
+
+.imTxt {
+  width: 630px;
+  margin: 0 auto;
+  font-size: 15px;
+  color: #ffff00;
+  font-weight: bold;
+}
+
+/*頁碼 */
+.u-npgprev {
+  background-image: url(../img/per.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  background-position: -2px -3px;
+}
+
+.u-npgnext {
+  background-image: url(../img/nex.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  background-position: -2px -3px;
+}
+
+.u-npgprev, .u-npgnext {
+  display: inline-block;
+  font-size: 0px;
+  line-height: 0;
+}
+
+.page {
+  font-size: 0;
+  letter-spacing: -4px;
+  text-align: center;
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page li {
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px solid #4E3718;
+  line-height: 20px;
+  height: 20px;
+  width: 25px;
+  margin-top: 0;
+  margin-right: 1px;
+  margin-bottom: 0px;
+  font-family: Verdana;
+  margin-left: 1px;
+  padding-top: 5px;
+}
+.page li s {
+  color: white;
+  background: #4E3718;
+}
+
+.page a, .page s {
+  display: block;
+  height: 20px;
+  color: #c48f4a;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  _display: inline;
+  _zoom: 1;
+  _overflow: hidden;
+  line-height: 15px;
+  margin-top: -5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 0;
+  padding-left: 5px;
+  text-decoration: none;
+}
+.page a:hover, .page s:hover {
+  background: #4E3718;
+  color: white;
+}
+
+/*.zonebingoMassage {
+	background: rgba(#000, 0.7);
+	width: 100%;
+	height: 900px;
+}*/
+.massageContent {
+  position: relative;
+  width: 677px;
+  height: 510px;
+  margin: 0 auto;
+  background: transparent url("../img/tfAttBg02.png") left top no-repeat;
+}
+.massageContent #cancle {
+  right: 210px;
+  top: 40px;
+}
+.massageContent .bingoMassage {
+  position: absolute;
+  width: 430px;
+  height: 380px;
+  color: #3f231d;
+  font-size: 15px;
+  left: 40px;
+  top: 80px;
+}
+.massageContent .ssTxt {
+  text-align: center;
+  font-weight: bold;
+}
+.massageContent .massageBox {
+  color: #ffff00;
+  font-size: 25px;
+  text-align: center;
+  background: transparent url("../img/brownBar-b.png") center no-repeat;
+}
+.massageContent .massageBox span {
+  font-size: 40px;
+  padding: 12px;
+}
+.massageContent .massageBox02 {
+  margin: 50px auto;
+  -webkit-text-shadow: 1px 1px 0 #000;
+  -moz-text-shadow: 1px 1px 0 #000;
+  text-shadow: 1px 1px 0 #000;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.massageContent .massageBox02 span {
+  color: #ffff00;
+}
+
+.massageBtn {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  width: 340px;
+  margin: 0 auto;
+}
+.massageBtn a {
+  display: inline-block;
+  margin: 0 8px;
+}
+.massageBtn a:hover {
+  -webkit-filter: contrast(2);
+  filter: contrast(2);
+}
+.massageBtn a:active {
+  position: relative;
+  top: 1px;
+}
+
+a.btn-yellow {
+  width: 152px;
+  height: 40px;
+  color: #5b0000;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a.btn-gray {
+  width: 152px;
+  height: 40px;
+  color: #404040;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mTxt {
+  position: absolute;
+  width: 100%;
+  bottom: -35px;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  -webkit-text-shadow: 1px 1px 0 #000;
+  -moz-text-shadow: 1px 1px 0 #000;
+  text-shadow: 1px 1px 0 #000;
+}
+.m02 .mTxt {
+  font-size: 13px;
+  width: 440px;
+  height: 24px;
+  line-height: 24px;
+  left: -55px;
+  bottom: -40px;
+  background: transparent url("../img/redBar.png") left top no-repeat;
+}
+
+.m04 .massageBox {
+  color: #fff;
+  font-size: 22px;
+}
+.m04 .ssTxt {
+  color: #3f231d;
+  font-size: 32px;
+}
+.m04 .massageBox02 {
+  font-size: 15px;
+  margin: 30px auto 5px;
+}
+.m04 .missionTxt {
+  font-size: 24px;
+  color: #ffff00;
+  text-align: center;
+  font-weight: bold;
+  -webkit-text-shadow: 1px 1px 0 #000;
+  -moz-text-shadow: 1px 1px 0 #000;
+  text-shadow: 1px 1px 0 #000;
+}
+.m04 .massageBtn {
+  bottom: 30px;
+}
+.m04 .FBtxt {
+  color: #fff;
+  text-align: center;
+  -webkit-text-shadow: 1px 1px 0 #000;
+  -moz-text-shadow: 1px 1px 0 #000;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.rewardBox {
+  width: 670px;
+  height: 499px;
+  font-weight: bold;
+  margin: 0 auto;
+  background: transparent url("../img/tfAttBg.png") left top no-repeat;
+}
+.rewardBox .infoBox {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  top: 190px;
+  left: 105px;
+}
+.rewardBox .txtBar {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  width: 344px;
+  height: 39px;
+  line-height: 39px;
+  background: transparent url("../img/brownBar.png") left top no-repeat;
+}
+.rewardBox .reward {
+  width: 300px;
+  height: 130px;
+  margin: 0 auto;
+  font-size: 24px;
+  color: #ffff00;
+  text-align: center;
+}
+.rewardBox .reward .r-d {
+  width: 100%;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.rewardBox .btn-yellow {
+  margin: 0 auto;
+}
+.rewardBox a:hover {
+  -webkit-filter: contrast(2);
+  filter: contrast(2);
+}
+.rewardBox .massageBtn {
+  left: 20px;
+  bottom: 30px;
+}
+
+.reward02 .reward {
+  font-size: 18px;
+  color: #fff;
+}
+.reward02 .reward span {
+  color: #ffcc00;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.reward03 .r-d {
+  font-size: 42px;
+  color: #fff;
+}
+.reward03 .btn-yellow {
+  .margin: 0 auto;
+  display: block;
+}
+
+.reward04 .r-d {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1400px) {
+  .honorRoll {
+    margin-left: -260px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .honorRoll {
+    margin-left: -460px;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .loadIn {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-name: loadIn;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-delay: 0s;
+    -moz-animation-duration: 8s;
+    -moz-animation-name: loadIn;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 0s;
+    -o-animation-duration: 8s;
+    -moz-animation-name: loadIn;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    -o-animation-fill-mode: forwards;
+    -o-animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-duration: 8s;
+    animation-name: loadIn;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  .nav01 {
+    -webkit-animation-delay: 8s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: btn-nav-01;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-delay: 8s;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: btn-nav-01;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 8s;
+    -o-animation-duration: 3s;
+    -moz-animation-name: btn-nav-01;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-fill-mode: forwards;
+    -o-animation-timing-function: linear;
+    animation-delay: 8s;
+    animation-duration: 3s;
+    animation-name: btn-nav-01;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  .nav02 {
+    -webkit-animation-delay: 11s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: btn-nav-02;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-delay: 11s;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: btn-nav-02;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 11s;
+    -o-animation-duration: 3s;
+    -moz-animation-name: btn-nav-02;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-fill-mode: forwards;
+    -o-animation-timing-function: linear;
+    animation-delay: 11s;
+    animation-duration: 3s;
+    animation-name: btn-nav-02;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  .nav03 {
+    -webkit-animation-delay: 14s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: btn-nav-03;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-delay: 14s;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: btn-nav-03;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 14s;
+    -o-animation-duration: 3s;
+    -moz-animation-name: btn-nav-03;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-fill-mode: forwards;
+    -o-animation-timing-function: linear;
+    animation-delay: 14s;
+    animation-duration: 3s;
+    animation-name: btn-nav-03;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  .nav04 {
+    -webkit-animation-delay: 17s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: btn-nav-04;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-delay: 17s;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: btn-nav-04;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 17s;
+    -o-animation-duration: 3s;
+    -moz-animation-name: btn-nav-04;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-fill-mode: forwards;
+    -o-animation-timing-function: linear;
+    animation-delay: 17s;
+    animation-duration: 3s;
+    animation-name: btn-nav-04;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  .events {
+    -webkit-animation-delay: 8s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: btn-bar;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-delay: 8s;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: btn-bar;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 8s;
+    -o-animation-duration: 3s;
+    -moz-animation-name: btn-bar;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-fill-mode: forwards;
+    -o-animation-timing-function: linear;
+    animation-delay: 8s;
+    animation-duration: 3s;
+    animation-name: btn-bar;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  .qa {
+    -webkit-animation-delay: 11s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: btn-bar;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-delay: 11s;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: btn-bar;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 11s;
+    -o-animation-duration: 3s;
+    -moz-animation-name: btn-bar;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-fill-mode: forwards;
+    -o-animation-timing-function: linear;
+    animation-delay: 11s;
+    animation-duration: 3s;
+    animation-name: btn-bar;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  .notice {
+    -webkit-animation-delay: 14s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: btn-bar;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-delay: 14s;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: btn-bar;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-delay: 14s;
+    -o-animation-duration: 3s;
+    -moz-animation-name: btn-bar;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-fill-mode: forwards;
+    -o-animation-timing-function: linear;
+    animation-delay: 14s;
+    animation-duration: 3s;
+    animation-name: btn-bar;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+}

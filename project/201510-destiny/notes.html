@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/customscroll.css">
+    <link rel="stylesheet" href="css/popmgr.css">
+    <style type="text/css">
+        html { min-width: 0; overflow: hidden;}
+        body { background: none;}
+    </style>
+</head>
+
+<body>
+    <div class="zoneBot">
+        <div class="zoneListContent J-evts-c">
+        <div id="cancle" class="pop-close"></div>
+            <div class="zoneMission missionBox01">
+                <div class="mistitle title-notice"></div>
+                <div class="zoneContent cscroll-filter vertical2" id="J-s">
+                    <div class="cscroll-main">
+                        <ul class="notesBox nuList">
+                            <li>本活動實際任務達成之計算、官方伺服器開放時間均依據《英雄聯盟》伺服器、資料庫之數據為準；須於活動期限內，達成活動指定之任務條件，才能獲得對應活動之參加、得獎資格與活動獎勵。活動獎勵與英雄造型所呈現之效果，應以遊戲內實際設定為準。</li>
+                            <li>本活動獎勵與造型折扣優惠均不適用於《英雄聯盟》商城退貨機制，亦無法更換為其他道具、點數、或返回儲值之費用。</li>
+                            <li>本活動對戰模式僅限 玩家vs玩家 與 玩家vs電腦 的所有對戰模式；其餘包含新手教學、自訂模式均不列入本活動計算範圍之內中。</li>
+                            <li>本活動造型折扣優惠不包含910聯盟幣的主題造型以及未曾販售之造型，例如： 極地狙擊手 凱特琳、藍色憂鬱 逆命、哥特羅莉 安妮…等等。</li>
+                            <li>本活動網頁兌換至 2015 年 11月9日 12: 00截止，於活動結束後即關閉網頁兌換領取、購買各項功能；未使用之剩餘次數、未領取之獎項及折扣優惠，即視為失效，無法重新兌換、領取或購買，亦不得要求轉換為現金、遊戲點數/幣值、紅利或更換其他商品及轉移至其他活動使用。</li>
+                            <li>本活動之參加、得獎資格或獎品不得轉讓予任何第三人，亦不得要求轉換為現金、遊戲點數/幣值、紅利，或更換其他商品或權益。</li>
+                            <li>如有任何因電腦、網路、電話、技術或不可歸責於本公司之事由，若因觸犯遊戲規章遭受凍結處份、個人線路不穩，導致斷線、連接失敗等問題，而使系統誤送活動訊息或中獎通知，或使參加者所寄出或登錄之資料有遲延、遺失、錯誤、無法辨識或毀損之情況，而影響活動參與，本公司均不負責，活動照常舉行，不另做補償。</li>
+                            <li>本公司有權檢視參加者於活動參與行為及中獎情形是否涉嫌例：人為操作、蓄意偽造、多重帳號、短時間異常多筆參與行為、透過任何電腦程式（如利用機器人或其他外掛程式）參與活動、借/盜用他人資料，或以詐欺或任何其他不正當的方式，進行不實或虛偽之活動參與行為，參加者因上述情形所獲得之活動資格及獎額，本公司有取消參加或得獎資格的權利，參加者並應承擔民、刑事相關責任。</li>
+                            <li>本活動各項辦法及規定，以活動網站公告及本公司官方說明為準，本公司擁有本活動隨時及最終保留、變更、修改、或撤回、取消獎勵發送等之權利，若因遇不可抗力之因素，本活動將有一部或全部暫停、延後舉辦或取消之權利。如有其他未盡事宜，本公司有權隨時補充或修正，並以最新公告為主。</li>
+                            <li>活動辦法及注意事項已載明於本活動網頁中，參加者於報名參加本活動之同時，已詳閱並瞭解該活動辦法及注意事項，且已同意接受該活動辦法及注意事項之規範。參加者如有違反該活動辦法、注意事項或政府法令之行為，本公司得立即取消其參加或得獎資格，並請求賠償本公司因此所受之一切損害。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/customscroll.min.js"></script>
+<script>
+document.getElementById('cancle').onclick = function() {
+    parent.PopMgr.getPopBox().closePop()
+    return false;
+}
+</script>
+<script>
+window.onload = function() {
+    new customScroll(document.getElementById('J-s'))
+}
+</script>
+
+</html>

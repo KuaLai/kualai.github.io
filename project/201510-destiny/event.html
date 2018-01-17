@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/customscroll.css">
+    <link rel="stylesheet" href="css/popmgr.css">
+    <style type="text/css">
+        html { min-width: 0; overflow: hidden;}
+        body { background: none;}
+    </style>
+</head>
+
+<body>
+    <div class="zoneBot">
+        <div class="zoneListContent J-evts-c">
+            <div id="cancle" class="pop-close"></div>
+            <div class="zoneMission missionBox01">
+                <div class="mistitle title-events"></div>
+                <div class="zoneContent cscroll-filter" id="J-s">
+                    <div class="eventBox">
+                        <div class="zoneTxt">喀咚喀咚 … 想知道自己要面對何種挑戰嗎？
+                            <br/>活動期間內，輕輕地拉下手把，將會有千奇百怪的專屬任務等著各位召喚師去解決；
+                            <br/>完成任務後，逆命將發給召喚師一張神秘卡牌，翻開它將會得到豐厚不一的獎賞。<span>不用猶豫，就讓命運安排一切。</span>
+                        </div>
+                        <div class="zoneEvents">
+                            <div class="zoneTitle">活動時間</div>
+                            <div class="content">2015/10/16 下午17:00 ~ 2015/11/02 中午12:00</div>
+                        </div>
+                        <div class="zoneEvents">
+                            <div class="zoneTitle">活動辦法</div>
+                            <div class="content">只要拉動手把，就會出現專屬每位召喚師的任務目標；完成任務後， 逆命將會發一張神秘的卡牌給召喚師， 翻開它後有專屬於你的獎勵或者造型折扣優惠。
+                            </div>
+                        </div>
+                        <div class="imTxt">※ 每位召喚師只有五次挑戰命運的機會，未完成任務即進行新的一輪拉霸視同放棄任務</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/customscroll.min.js"></script>
+<script>
+document.getElementById('cancle').onclick = function() {
+    parent.PopMgr.getPopBox().closePop()
+    return false;
+}
+</script>
+<script>
+window.onload = function() {
+    new customScroll(document.getElementById('J-s'))
+}
+</script>
+
+</html>
