@@ -2,7 +2,7 @@ var nav = ".btn";
 var m = ".menu";
 var bk = ".close";
 var sp = "#nav-container";
-$(nav).click(function () {
+$(sp).click(function () {
     $(nav).addClass("show");
     $(m).addClass("show");
     $(sp).addClass("n");

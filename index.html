@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Kua Design - web designer</title>
     <meta name="description" content="" />
     <meta name="keywords"  content="" />
     <link rel="image_src" href="" />
@@ -20,15 +20,29 @@
     <!-- meta 資訊 start -->
     <!-- meta 資訊 end -->
     <!-- css -->
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/chartist.min.css">
     <!-- js -->
+    <!--[if lt IE 9]>
+            <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <![endif]-->
 </head>
 
 <body>
     <div class="wrapper">
         <header>
             <h1>Kua Design - web designer</h1>
+            <div class="container">
+                <i class="fa fa-bicycle fa-5x"></i>
+                <div class="back">
+                    <i class="fa fa-circle-o fa-3x spin"></i>
+                </div>
+                <div class="front">
+                    <i class="fa fa-circle-o fa-3x spin"></i>
+                </div>
+            </div>
             <div class="slogan">
                 <span>人生就像騎單車，只有不斷前進才能維持平衡。</span>
                 Life is like riding a bicycle. To keep your balance, you must keep moving - 亞伯特．愛因斯坦.
@@ -41,13 +55,13 @@
             <div id="nav-content" tabindex="0" class="menu">
                 <ul>
                     <li>
-                        <a href="web.html">web</a>
+                        <a href="javascrtpt:;">web</a>
                     </li>
                     <li>
-                        <a href="design.html">design</a>
+                        <a href="javascrtpt:;">design</a>
                     </li>
                     <li>
-                        <a href="content.html">about</a>
+                        <a href="javascrtpt:;">about</a>
                     </li>
                 </ul>
                 <div class="bg close"></div>
@@ -57,72 +71,270 @@
         <section>
             <div class="wrap-bg01">
                 <div class="profile">
-                    <div class="profile__img"></div>
+                    <div class="profile__img">
+                        <img src="images/img-kua.jpg" alt="">
+                    </div>
                     <div class="profile__name">賴雪華 Kua Lai </div>
                     <div class="profile__title">UI/UX Designer,Web Designer</div>
-                </div>
-                <div class="experience">
-                    <div class="experience__list">
-                        <div class="experience__item">
-                            <div class="experience__item-title"></div>
-                            <div class="experience__job-name"></div>
-                            <div class="experience__content"></div>
-                        </div>
-                        <div class="experience__item">
-                            <div class="experience__item-title"></div>
-                            <div class="experience__job-name"></div>
-                            <div class="experience__content"></div>
-                        </div>
-                        <div class="experience__item">
-                            <div class="experience__item-title"></div>
-                            <div class="experience__job-name"></div>
-                            <div class="experience__content"></div>
-                        </div>
-                        <div class="experience__item">
-                            <div class="experience__item-title"></div>
-                            <div class="experience__job-name"></div>
-                            <div class="experience__content"></div>
-                        </div>
-                        <div class="experience__item">
-                            <div class="experience__item-title"></div>
-                            <div class="experience__job-name"></div>
-                            <div class="experience__content"></div>
-                        </div>
+                    <div class="profile__content">
+                        目前在新創公司，從事研發部門UI/UX Designer。協助程式開發系統規劃相關的UI/UX設計、伺服器維護、系統測試等實務經驗。</br>我喜歡玩桌遊喜歡唱歌喜歡可以讓我們盡情發揮工作技能，遊玩新的套件與語法去嘗試！希望可以在未知的領域更進一步，提升自我能力！
                     </div>
                 </div>
-                <div class="skill">
+                <div class="experience layout-frame">
+                    <div class="experience__title">經歷</div>
+                    <div class="experience__timeline">
+                        <div class="experience__item">
+                            <div class="experience__item-title">香港商阿爾伊股份有限公司，2017 年 3 月 - 至今</div>
+                            <div class="experience__job-name">UI/UX Designer</div>
+                            <div class="experience__content">
+                                <ul>
+                                    <li>網頁/網站設計與切版</li>
+                                    <li>html5/css3</li>
+                                    <li>RWD</li>
+                                    <li>sass</li>
+                                    <li>jQuery</li>
+                                </ul>
+                                <ul>
+                                    <li>前端開發工具應用與環境</li>
+                                    <li>Visual Studio Code</li>
+                                    <li>vue</li>
+                                    <li>vue Element</li>
+                                    <li>sketch</li>
+                                    <li>gulp</li>
+                                    <li>sweetalert</li>
+                                </ul>
+                                <ul>
+                                    <li>專案協同開發應用 </li>
+                                    <li>Git</li>
+                                    <li>Sourcetree</li>
+                                    <li>Zeplin</li>
+                                </ul>
+                                <ul>
+                                    <li>視覺設計</li>
+                                    <li>官網建置</li>
+                                    <li>活動頁</li>
+                                    <li>banner製作與分配</li>
+                                    <li>公司相關製作物</li>
+                                </ul>
+                                <div class="work__list">
+                                    <div class="work__item-title">系統流程規劃設計</div>
+                                    <div class="work__item">規劃APP產品需求
+                                        <div class="work__item-list">design thinking / 消化產品功能</div>
+                                    </div>
+                                    <div class="work__item">產品需求流程規劃</div>
+                                    <div class="work__item">雙系統雙介面設計
+                                        <div class="work__item-list">wireframe/mockup/prototype</div>
+                                        <div class="work__item-list">IOS/android 畫面 (消費者前台APP/店家後台APP)</div>
+                                    </div>
+                                    <div class="work__item">admin後台介面設計
+                                        <div class="work__item-list">需求開發與功能規劃</div>
+                                        <div class="work__item-list">客服系統</div>
+                                        <div class="work__item-list">營運維護系統</div>
+                                        <div class="work__item-list">報表系統</div>
+                                        <div class="work__item-list">會計系統</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience__item">
+                            <div class="experience__item-title">Garena 台灣競舞娛樂有限公司，2015 年 3 月 - 2017 年 3 月</div>
+                            <div class="experience__job-name">網頁設計師</div>
+                            <div class="experience__content">
+                                <ul>
+                                    <li>網頁/網站設計與切版 技術應用</li>
+                                    <li>html5/css3</li>
+                                    <li>RWD</li>
+                                    <li>sass</li>
+                                    <li>gulp/Visual Studio Code</li>
+                                    <li>jQuery</li>
+                                </ul>
+                                <div class="work__list">
+                                    <div class="work__item-title">設計 相關實例</div>
+                                    <div class="work__item">banner製作</div>
+                                    <div class="work__item">賽事官網
+                                        <div class="work__item-list">LMS 網頁</div>
+                                        <div class="work__item-list">電競部落</div>
+                                    </div>
+                                    <div class="work__item">遊戲大廳改版
+                                        <div class="work__item-list">輪播與新聞呈顯</div>
+                                    </div>
+                                    <div class="work__item">電競館ban/pick系統(LED大螢幕)
+                                        <div class="work__item-list">動畫製作(jQuery)</div>
+                                    </div>
+                                    <div class="work__item">活動設計
+                                        <div class="work__item-list">大富翁活動</div>
+                                        <div class="work__item-list">拉霸機活動 轉動自己的命運</div>
+                                        <div class="work__item-list">爬塔活動 提摩登月試煉</div>
+                                        <div class="work__item-list">全年度校際盃賽事網站(預賽/複賽/決賽)</div>
+                                    </div>
+                                    <div class="work__item">聯合協作活動
+                                        <div class="work__item-list">歡慶聖誕</div>
+                                        <div class="work__item-list">五週年紀念</div>
+                                        <div class="work__item-list">新年活動</div>
+                                    </div>
+                                    <div class="work__item">平面製作/輸出物相關
+                                        <div class="work__item-list">六福村</div>
+                                        <div class="work__item-list">2016 LICC 大型賽事 國際大學冠軍賽</div>
+                                        <div class="work__item-list">校際盃電競賽事 </div>
+                                    </div>
+                                    <div class="work__item">福委會 擔任活動組幹部
+                                        <div class="work__item-list">舉辦公司內部電競賽事</div>
+                                        <div class="work__item-list">尾牙籌劃</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience__item">
+                            <div class="experience__item-title">Mostwant 最想科技股份有限公司</div>
+                            <div class="experience__job-name">網頁設計師</div>
+                            <div class="experience__content">
+                                <ul>
+                                    <li>網頁/網站設計與切版</li>
+                                    <li>html5/css3</li>
+                                    <li>RWD</li>
+                                    <li>sass/sublime text 3</li>
+                                    <li>susy/bootstrap</li>
+                                    <li>SVG & Web Font 字型庫製作</li>
+                                </ul>
+                                <div class="work__item">
+                                    <div class="work__item-title">網站實例</div>
+                                    <div class="work__item-list">Mostwant 最想科技 招商網站</div>
+                                    <div class="work__item-list">mostWant 最想商城</div>
+                                    <div class="work__item-list">商城設計、會員中心、結帳頁面、商店街頁面</div>
+                                    <div class="work__item-list">促銷活動頁</div>
+                                    <div class="work__item-list">EDM</div>
+                                </div>
+                                <div class="work__item">
+                                    <div class="work__item-title">Logo設計/名片設計</div>
+                                    <div class="work__item-list">商城Logo設計/app樣式設計</div>
+                                    <div class="work__item-list">客製化商城內其他店家Logo設計</div>
+                                    <div class="work__item-list">商城/公司 名片</div>
+                                </div>
+                                <div class="work__item">
+                                    <div class="work__item-title">視覺設計與管理</div>
+                                    <div class="work__item-list">app視覺、站內視覺、EDM視覺、活動banner</div>
+                                    <div class="work__item-list">banner工作安排、視覺教搞</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience__item">
+                            <div class="experience__item-title">亞東電子商務(Go Happy快樂購物網/現在：friday購物)</div>
+                            <div class="experience__job-name">視覺設計師</div>
+                            <div class="experience__content">
+                                <div class="work__item">
+                                    <div class="work__item-list work__item-list--narrative">配合各館別所需形象與PM溝通</div>
+                                    <div class="work__item-list work__item-list--narrative">網站所需製作EDM、Banner、活動視覺、GIF動畫</div>
+                                    <div class="work__item-list work__item-list--narrative">視覺發想及切版</div>
+                                    <div class="work__item-list work__item-list--narrative">福委會幹部</div>
+                                    <div class="work__item-list work__item-list--narrative">發想各大節日活動/聖誕節公司小天使交換禮物</div>
+                                    <div class="work__item-list work__item-list--narrative">活動關卡主持人</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience__item">
+                            <div class="experience__item-title">數位因子科技網路有現公司</div>
+                            <div class="experience__job-name">視覺美術設計</div>
+                            <div class="experience__content">
+                                <div class="work__item">
+                                    <div class="work__item-list work__item-list--narrative">設計公司形象之視覺規範、視覺設計</div>
+                                    <div class="work__item-list work__item-list--narrative">網站視覺規劃與網頁製作</div>
+                                    <div class="work__item-list work__item-list--narrative">flash、DIV切版、css調整&排版 與業務、企劃、程式設計等相關人員配合</div>
+                                    <div class="work__item-list work__item-list--narrative">後台建置</div>
+                                    <div class="work__item-list work__item-list--narrative">協同執行與討論專案企劃</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="school__item">
+                        <div class="school__item-title">世新大學，2011年6月 畢業</div>
+                        <div class="school__department-name">數位多媒體設計學系</div>
+                    </div>
+                </div>
+                <div class="skill layout-frame">
+                    <div class="skill__title">軟體使用熟練度</div>
                     <div class="skill__list">
                         <div class="skill__item">
-                            <div class="item-title"></div>
-                            <div class="item-data"></div>
+                            <div class="chart chart01" data-percent="95">
+                                <div class="item">
+                                    <div class="item-title">Photoshop</div>
+                                    <span class="percent"></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="skill__item">
-                            <div class="item-title"></div>
-                            <div class="item-data"></div>
+                            <div class="chart chart01" data-percent="90">
+                                <div class="item">
+                                    <div class="item-title">Illustrator</div>
+                                    <span class="percent"></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="skill__item">
-                            <div class="item-title"></div>
-                            <div class="item-data"></div>
+                            <div class="chart chart01" data-percent="85">
+                                <div class="item">
+                                    <div class="item-title">Sketch</div>
+                                    <span class="percent"></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="skill__item">
-                            <div class="item-title"></div>
-                            <div class="item-data"></div>
+                            <div class="chart chart01" data-percent="80">
+                                <div class="item">
+                                    <div class="item-title">VisualStudioCode</div>
+                                    <span class="percent"></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="skill__item">
-                            <div class="item-title"></div>
-                            <div class="item-data"></div>
+                            <div class="chart chart01" data-percent="60">
+                                <div class="item">
+                                    <div class="item-title">Sourcetree</div>
+                                    <span class="percent"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill__title">程式語言與網頁設計開發技術 熟練度</div>
+                    <div class="skill__list">
+                        <div class="skill__item">
+                            <div class="chart chart02" data-percent="95">
+                                <div class="item">
+                                    <div class="item-title">sass/scss</div>
+                                    <span class="percent"></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="skill__item">
-                            <div class="item-title"></div>
-                            <div class="item-data"></div>
+                            <div class="chart chart02" data-percent="80">
+                                <div class="item">
+                                    <div class="item-title">html5/css3</div>
+                                    <span class="percent"></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="skill__item">
-                            <div class="item-title"></div>
-                            <div class="item-data"></div>
+                            <div class="chart chart02" data-percent="85">
+                                <div class="item">
+                                    <div class="item-title">RWD</div>
+                                    <span class="percent"></span>
+                                </div>
+                            </div>
                         </div>
                         <div class="skill__item">
-                            <div class="item-title"></div>
-                            <div class="item-data"></div>
+                            <div class="chart chart02" data-percent="70">
+                                <div class="item">
+                                    <div class="item-title">jQuery</div>
+                                    <span class="percent"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="chart chart02" data-percent="50">
+                                <div class="item">
+                                    <div class="item-title">gulp</div>
+                                    <span class="percent"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,8 +348,11 @@
     </div>
 
     <script type="text/javascript" src="js/min/jquery-1.11.2.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="js/min/swiper.jquery.min.js"></script>
     <script type="text/javascript" src="js/min/nav.min.js"></script>
+    <script type="text/javascript" src="js/min/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="js/min/chart.min.js"></script>
 </body>
 
 </html>
