@@ -5,11 +5,6 @@
         margin: 0 auto;
         @include circle(150px,rgba(0,0,0,0));
         overflow: hidden;
-        img {
-            width: 140%;
-            margin-top: 1.8rem;
-            @include translate-center;
-        }
     }
     &__name {
         font-size: 1.2rem;
