@@ -1,0 +1,193 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    outline: none;
+    width: 100%;
+    background: rgba(#fff,0.8);
+    @include dc;
+    &:hover {
+        background: rgba(#fff,1);
+        @include dc;
+    }
+    a {
+        display: block;
+        outline: none;
+    }
+}
+
+#nav-container {
+    @include respond-to(ssm) {
+        cursor: pointer;
+        padding: 1.6rem 1rem;
+        &.n {
+            pointer-events: none;
+        }
+        .btn {
+            position: relative;
+            width: 25px;
+            height: 3px;
+            background: $nav-style-dark;
+            cursor: pointer;
+            @include dc;
+            @include radius(4px);
+            pointer-events: auto;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-appearance: none;
+            &:before,
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 120%;
+                height: 3px;
+                top: -300%;
+                background: $nav-style-dark;
+                @include dc;
+                @include radius(4px);
+            }
+            &:after,
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 120%;
+                height: 3px;
+                top: 300%;
+                background: $nav-style-dark;
+                @include dc;
+                @include radius(4px);
+            }
+            &.show {
+                @include dc;
+                background: none;
+                pointer-events: none;
+                &:before,
+                &::before {
+                    @include dc;
+                    @include translate-center;
+                    transform: rotate(-45deg);
+                    left: 0;
+                    background: $nav-style-light;
+                }
+                &:after,
+                &::after {
+                    @include dc;
+                    @include translate-center;
+                    transform: rotate(45deg);
+                    left: 0;
+                    background: $nav-style-light;
+                }
+            }
+        }
+    }
+}
+
+#nav-content {
+    text-align: right;
+    @include respond-to(ssm) {
+        max-width: 200px;
+        top: 0;
+        left: 0;
+        padding-top: 3rem;
+        text-align: left;
+        height: calc( 100vh - 3rem);
+        pointer-events: auto;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        transform: translateX(-100%);
+        transition: transform .3s;
+        will-change: transform;
+        contain: paint;
+        position: fixed;
+        z-index: -1;
+        background: rgba(#000, 0.9);
+        @include dc;        
+        &.show {
+            transform: translateX(0);
+        }
+        .bg {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    a {
+        display: block;
+        line-height: 65px;
+        font-size: 1rem;
+        @include respond-to(ssm) { 
+            color: #d7d7d7;
+        }
+    }
+    li {
+        display: inline-block;
+        @include respond-to(ssm) {
+            position: relative;
+            display: block;
+            border-bottom: 1px solid #373535;
+        }
+        a {
+            display: block;
+            padding: 0 2rem;
+            text-decoration: none;
+            @include respond-to(ssm) {
+                color: #c4c4c4;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        span {
+            margin: 0 5px;
+            @include respond-to(ssm) {
+                display: block;
+                font-size: 12px;
+                margin: 0;
+                line-height: 18px;
+                transform: translate(0,-15px);
+            }
+        }
+        &.select {
+            a {
+                position: relative;
+                color: rgba(255,0,0,.6);
+                @include respond-to(sm) {
+                    color: #fff;
+                    text-indent: -10px;
+                }
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: rgba(255,0,0,.6);
+                    @include respond-to(sm) {
+                       width: 3px;
+                       height: 100%;
+                       left: auto;
+                       right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    background: rgba(#000, 0.7);
+    display: none;
+}

@@ -1,0 +1,12 @@
+$bg-item: bg01,bg02,bg03,bg04;
+.wrap {
+    @each $item in $bg-item {
+        &-#{$item} {
+            position: relative;
+            //min-height: 100vh;
+            background: url("#{$bg}#{$item}.png") repeat-x center top;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+//bike
+.container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    z-index: 3;
+  }
+  
+  .fa-bicycle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: #000;
+  }
+  
+  .back  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-128%, -30%);
+    z-index: 7;
+  }
+  
+  .front  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(28%, -30%);
+    z-index: 7;
+  }
+  
+  .spin-slow {
+    color: #999;
+    animation: cog-spin-foward infinite 3s linear;
+  }
+  
+  @keyframes cog-spin-foward {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .spin {
+    color: rgb(105, 105, 105);
+    animation: cog-spin infinite 1s linear;
+  }
+  
+  @keyframes cog-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }

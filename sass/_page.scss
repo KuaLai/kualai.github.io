@@ -1,0 +1,414 @@
+.profile {
+    text-align: center;
+    &__img {
+        transform: translate(0,-75px);
+        margin: 0 auto;
+        @include circle(150px,rgba(0,0,0,0));
+        overflow: hidden;
+        img {
+            width: 140%;
+            margin-top: 1.8rem;
+            @include translate-center;
+        }
+    }
+    &__name {
+        font-size: 1.2rem;
+        transform: translate(0,-45px);
+       
+    }
+    &__title {
+        transform: translate(0,-45px);
+    }
+    &__content {
+        transform: translate(0,-25px);
+        @include respond-to(ssm) {
+            padding: 0 1rem;
+        }
+    }
+}
+.experience {
+    text-align: center;
+    @include respond-to(ssm) {
+        text-align: left;
+    }
+    &__title {
+        font-size: 1.8rem;
+        @include respond-to(ssm) {
+            font-size: 1.2rem;
+            padding-left: 0.5rem;            
+            text-align: left;
+        }
+    }
+    &__timeline {
+        position: relative;
+        &:before,&::before {
+            content: "";
+            width: 3px;
+            height: 100%;
+            background: #302124;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            @include respond-to(ssm) {
+                left: 4%;
+            }
+        }
+        
+        &:after,&::after {
+            content: "";
+            clear: both;
+            display: block;
+            @include circle(1rem,#fff);
+            border: 2px solid #000;
+            margin: 0 auto;
+            position: relative;
+            z-index: 3;
+            @include respond-to(ssm) {
+                margin: 0 0 0 0.4rem;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        float: left;
+        width: calc( 50% - 2rem);
+        padding: 1rem;
+        text-align: left;
+        @include respond-to(ssm) {
+            float: none;
+            width: calc( 80% - 2rem);
+            margin: 0 auto;
+            background: #fff;
+            transform: translateX(0.5rem);
+        }
+        &--school {
+            float: none;
+        }
+        &:nth-child(even) {
+            float: right;
+            transform: translate(25px,0);
+            @include respond-to(ssm) {
+                float: none;
+                transform: translate(0.5rem,0);
+            }
+            .experience__item-title {
+                &:after,&::after {
+                    right: auto;
+                    top:  1.5rem;
+                    left: -34px;
+                    @include respond-to(ssm) {
+                        left: -2.4rem;
+                    }
+                }
+                &:before,&::before {
+                    right: auto;
+                    left: -34px;
+                    @include respond-to(ssm) {
+                        left: -1.2rem;
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            margin-top: 10rem;
+            @include respond-to(ssm) {
+                margin-top: 0;
+            }
+        }
+        $item-w: 37%,6%,50%,6%,60%;
+        @for $i from 1 through length($item-w) {
+            &:nth-child(#{$i}){
+                .experience__item-title {
+                    &:before,&::before {
+                        width: nth($item-w,$i);
+                        @include respond-to(ssm) {
+                            width: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__item-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        &:after,&::after {
+            content: '';
+            position: absolute;
+            top: 1.5rem;
+            right: -12px;
+            display: block;
+            @include circle(1rem,#fff);
+            border: 2px solid #000;
+            @include respond-to(ssm) {
+                right: auto;
+                left: -2.4rem;
+            }
+        }
+        &:before,&::before {
+            content: '';
+            position: absolute;
+            top: 2rem;
+            right: -12px;
+            display: block;
+            height: 1px;
+            background: #000;
+            @include respond-to(ssm) {
+                right: auto;
+                left: -1.2rem;
+            }
+        }
+    }
+    &__job-name {
+        display: inline-block;
+        font-size: 0.6rem;
+        border: 1px solid #222;
+        padding: 0 0.6rem;
+        margin-bottom: 1rem;
+        @include radius(4px);
+    }
+    &__content {
+        ul {
+            margin-bottom: 1rem;
+        }
+        li {
+            display: inline-block;
+            //background: rgba(122, 122, 122, 0.6);
+            color: #fff;
+            padding: 0 0.6rem;
+            @include radius(4px);
+            @for $i from 2 through length($item-bg) {
+                &:nth-child(#{$i}){
+                    background: nth($item-bg,$i);
+                }
+            }
+            @include respond-to(ssm) {
+                margin: 0 0 0.5rem 0;
+            }
+            &:first-child {
+                display: block;
+                font-weight: bold;
+                background: none;
+                color: #000;
+                padding: 0;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+.school {
+    &__item {
+        margin: 1rem 0; 
+        @include respond-to(ssm) {
+            margin: 1rem ;
+        }
+    }
+    &__item-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    &__department-name {
+        @extend .experience__job-name;
+    }
+}
+.work {
+    &__list {}
+    &__item-title {
+        font-weight: bold;
+        color: #000;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    &__item {
+        font-weight: bold;
+        color: rgb(91, 90, 110);
+    }
+    &__item-list {
+        font-weight: normal;
+        color: #4a4a4a;
+        padding-left: 1rem;
+        &:last-child {
+            margin-bottom: 0.5rem;
+        }
+        &--narrative {
+            padding-left: 0;
+        }
+    }
+}
+.skill {
+    text-align: center;
+    padding: 2rem 0;
+    &__title {
+        font-size: 1.8rem;
+        @include respond-to(ssm) {
+            font-size: 1.2rem;
+            padding: 0 0 0.5rem 0;
+            margin: 0 1rem;
+            border-bottom: 1px solid #4a4a4a;
+        }
+    }
+    &__item {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        // @include circle(150px,#fff);
+        // border: 5px solid #4a4a4a;
+        margin: 2rem 1rem;
+        width: 150px;
+        .item {
+            @include translate-center;
+        }
+        span {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+    }
+}
+.itemlist {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    @include respond-to(ssm) {
+        width: 90%;
+        
+    }
+    .item {
+        width: 24%;
+        margin: 1rem 0.5%;
+        background: #fff;
+        box-shadow: 0px 0px 5px rgba(#000,0.2);
+        @include radius(4px);
+        overflow: hidden;
+        @include respond-to(ssm) {
+            width: 48%;
+            margin: 1rem 1%;
+        }
+        &--twins {
+            width: 49%;
+            @include respond-to(ssm) {
+                width: 98%;
+                margin: 1rem 1%;
+            }
+        }  
+        &__cover {
+            position: relative;
+            overflow: hidden;
+            img {
+                transform: scale(1) rotate(0deg);
+                @include dc(.8s);
+            }
+            &:before,&::before {
+                content: '查看';
+                display: block;
+                color: #fff;
+                padding: 5px 15px;
+                border: 1px solid #fff;
+                opacity: 0;
+                visibility: hidden;
+                @include translate-center;
+                z-index: 3;
+                @include dc(.8s);
+                margin-top: -1rem;
+            }
+            &:after,&::after {
+                content: '';
+                display: block;
+                background: rgba(#000,0.7);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                visibility: hidden;
+                @include dc;
+            }
+        }
+        &__title {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0.5rem 1rem 0;
+        }
+        &__content {
+            margin: 0 1rem 1rem;
+            li {
+                &:nth-child(2) {
+                    display: inline-block;
+                    font-size: 12px;
+                    padding: 0 10px;
+                    border: 1px solid #999;
+                }
+                span {
+                    display: inline-block;
+                    padding: 0 10px;
+                    margin: 10px 5px 0 0;
+                    color: #fff;
+                    font-size: 12px;
+                    @include radius(10px);
+                    @for $i from 1 through length($item-bg) {
+                        &:nth-child(#{$i}){
+                            background: nth($item-bg,$i);
+                        }
+                    }
+                }
+            }
+        }
+        &--oc {
+            margin: 0;
+        }
+        a {
+            color: #302124;
+            &:hover {
+                .item__cover {
+                    img {
+                        transform: scale(1.2) rotate(5deg);
+                    }
+                    &:before,&::before,&::after,&:after {
+                        opacity: 1;
+                        visibility: visible;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    .item-hd {
+        position: relative;
+        width: 100%;
+        margin: 1rem 0.5%;
+        box-shadow: 0px 0px 5px rgba(#000,0.2);
+        @include radius(4px);
+        overflow: hidden;
+        @include respond-to(ssm) {
+            width: 98%;
+            margin: 1rem 1%;
+        }
+        &__title {
+            @include translate-center;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: rgba(#000,0.6);
+            text-align: center;
+            p {
+                @include translate-center;
+                font-size: 1.8rem;
+                color: #fff;
+            }
+            span {
+                display: block;
+                font-size: 1rem;
+            }
+        }
+    }
+    .style-t1 {
+        border-bottom: 1px solid #999;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .fz-24 {
+        font-size: 24px;      
+    }
+}

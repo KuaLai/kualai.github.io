@@ -1,0 +1,33 @@
+@import "mixins";
+$hd-height: 80px;
+$bg: "../images/";
+// $bg: "~@/assets/images/";
+$width: 1000px;
+$bg-color: #EFEFEF;
+$body-color: #fff;
+$link-color: #4a4a4a;
+$link-active: #cc2f2d;
+$link-color-hover: #cc2f2d;
+$main-color: #4a4a4a;
+$font-size: 13px;
+$fontStyle: $fontUti;
+$footer-bg: #4a4a4a;
+
+/******************************************/
+
+$red: #e70400;
+$green: #7ed321;
+$yellow: #f6a623;
+$gray: #979797;
+
+/******************************************/
+
+$nav-style-light: #fff;
+$nav-style-dark: #222;
+$item-bg : rgba(122, 122, 122, 0.6),
+rgba(255, 0, 0, 0.6),
+rgba(0, 99, 248, 0.6),
+rgba(255, 166, 0, 0.6),
+rgba(134, 163, 1, 0.6),
+rgba(0, 167, 167, 0.6),
+rgba(100, 67, 138, 0.6);

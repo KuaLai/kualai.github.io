@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import "mixins";
+@import "extend";
+@import "animate";
+@import "default";
+@import "nav";
+@import "layout";
+@import "page";
+@import "footer";
+@import "browser";
+@import "bicycle";
+
+$bg-item: bg01;
+.wrap {
+    @each $item in $bg-item {
+        &-#{$item} {
+            background: url("#{$bg}#{$item}.png") repeat center top;
+        }
+    }
+}
+
+.layout-frame {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    &__title {
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 2rem 0 0 2rem;
+    }
+}
+
+//遮罩
+.zoneMask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 23;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000,0.7);
+    @include respond-to(sm) {
+        overflow-y: auto;
+    }
+    &__colse {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+}
