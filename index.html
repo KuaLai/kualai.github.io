@@ -54,29 +54,29 @@
             </div>
             <div id="nav-content" tabindex="0" class="menu">
                 <ul>
-                        <li class="select">
-                                <a href="#" >關於我
-                                    <span>About Kua</span>
-                                </a>
-                            </li>
-                    <li>
-                        <a href="#">網站/網頁
-                            <span>Website&Events</span>
+                    <li class="select" data-url="about">
+                        <a href="#about"onclick="history.pushState(state,title,'/click/me.html');">關於我
+                            <span>About Kua</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">介面設計/其他
+                    <li data-url="webs">
+                        <a href="#webs">網站/網頁
+                            <span>Webs</span>
+                        </a>
+                    </li>
+                    <li data-url="design">
+                        <a href="Javascript:;">介面設計/其他
                             <span>Design</span>
                         </a>
                     </li>
-                    
+
                 </ul>
                 <div class="bg close"></div>
             </div>
             <div class="mask close"></div>
         </nav>
         <section id="content">
-            <div class="wrap-page wrap-bg01">
+            <div class="wrap-page wrap-bg01" data-id="about">
                 <div class="profile">
                     <div class="profile__img">
                         <img src="images/img-kua.jpg" alt="">
@@ -346,9 +346,9 @@
                     </div>
                 </div>
             </div>
-            <div class="wrap-page wrap-bg02" style="display: none;">
+            <div class="wrap-page wrap-bg02" data-id="webs">
                 <div class="webdesign layout-frame">
-                    <div class="layout-frame__title">網站/網頁 Website&Events</div>
+                    <div class="layout-frame__title">網站/網頁 Webs</div>
                     <div class="itemlist">
                         <div class="item">
                             <a target="_blank" href="https://myre.life/">
@@ -583,7 +583,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wrap-page wrap-bg03" style="display: none;">
+            <div class="wrap-page wrap-bg03" data-id="design">
                 <div class="webdesign layout-frame">
                     <div class="layout-frame__title">介面設計 UI Design</div>
                     <div class="itemlist">
@@ -710,7 +710,6 @@
     <script type="text/javascript" src="js/min/jquery-1.11.2.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="js/min/swiper.jquery.min.js"></script>
-    <script type="text/javascript" src="js/min/jquery.address-1.5.min.js"></script>
     <script type="text/javascript" src="js/min/nav.min.js"></script>
     <script type="text/javascript" src="js/min/jquery.easypiechart.min.js"></script>
     <script type="text/javascript" src="js/min/chart.min.js"></script>

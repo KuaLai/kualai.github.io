@@ -1,0 +1,340 @@
+/*字型*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+$fontxm: arial,PMingLiU,'\65B0\7D30\660E\9AD4';
+$fontjh: arial,'Microsoft JhengHei','\5FAE\8EDF\6B63\9ED1\9AD4',PMingLiU,'\65B0\7D30\660E\9AD4';
+$fontyh: arial,'Microsoft YaHei','\5FAE\8F6F\96C5\9ED1',PMingLiU,'\65B0\7D30\660E\9AD4';
+$fontUti: 'Noto Sans TC','LiHei Pro',微軟正黑體,新細明體,sans-serif;
+
+/*常用*/
+
+@mixin dc($dynamic: all 0.2s) {
+    transition: $dynamic;
+}
+
+@mixin radius($angle) {
+    border-radius: $angle;
+}
+
+@mixin circle($size, $bgcolor) {
+    width: $size;
+    height: $size;
+    @include radius($size);
+    background: $bgcolor;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    filter: alpha(opacity=$opacity * 100);
+}
+
+@mixin txt-overflow($width) {
+    width: 100%;
+    max-width: $width;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*陰影*/
+
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin box-shadow-ff($x, $y, $blurA, $blurB, $blurC, $blurD, $blurE, $color) {
+    box-shadow: $x $y $blurA $color, $x $y $blurB $color, $x $y $blurC $color, $x $y $blurD $color, $x $y $blurE $color;
+}
+
+@mixin shadow($x, $y, $blur, $color) {
+    text-shadow: $x $y $blur $color;
+}
+
+@mixin txt-shadow($x, $y, $blurA, $blurB, $blurC, $blurD, $blurE, $color) {
+    text-shadow: $x $y $blurA $color, $x $y $blurB $color, $x $y $blurC $color, $x $y $blurD $color, $x $y $blurE $color;
+}
+
+
+/*漸層*/
+
+@mixin linear-gradient($from, $to) {
+    background-color: $to;
+    background-image: -moz-linear-gradirnt($from, $to);
+    background-image: linear-gradient($from, $to);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}', GradientType=0);
+}
+
+@mixin linear-gradient-x($from, $to) {
+    background-color: $to;
+    background-image: -moz-linear-gradirnt(left, $from, $to);
+    background-image: linear-gradient(to right, $from, $to);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}', GradientType=1);
+}
+
+
+/*三角形*/
+
+@mixin triangle($size, $color, $align, $type: 1) {
+    height: 0;
+    width: 0;
+    @if $align==top {
+        border-bottom: $size * $type solid $color;
+        border-left: $size / 2 solid transparent;
+        border-right: $size / 2 solid transparent;
+    }
+    @else if $align==right {
+        border-left: $size * $type solid $color;
+        border-top: $size / 2 solid transparent;
+        border-bottom: $size / 2 solid transparent;
+    }
+    @else if $align==bottom {
+        border-top: $size * $type solid $color;
+        border-left: $size / 2 solid transparent;
+        border-right: $size / 2 solid transparent;
+    }
+    @else if $align==left {
+        border-right: $size * $type solid $color;
+        border-top: $size / 2 solid transparent;
+        border-bottom: $size / 2 solid transparent;
+    }
+    @else if $align==right-top {
+        border-right: $size solid $color;
+        border-bottom: $size solid transparent;
+    }
+    @else if $align==left-top {
+        border-left: $size solid $color;
+        border-bottom: $size solid transparent;
+    }
+    @else if $align==right-bottom {
+        border-right: $size solid $color;
+        border-top: $size solid transparent;
+    }
+    @else if $align==left-bottom {
+        border-left: $size solid $color;
+        border-top: $size solid transparent;
+    }
+}
+
+@mixin triangle-B($sizeA, $sizeB, $color, $align, $type: 1) {
+    @if $align==right-top {
+        border-top: $sizeA solid $color;
+        border-bottom: $sizeB dotted transparent;
+        border-left: $sizeB dotted transparent;
+    }
+    @else if $align==right-bottom {
+        border-bottom: $sizeA solid $color;
+        border-top: $sizeB dotted transparent;
+        border-left: $sizeB dotted transparent;
+    }
+    @else if $align==left-top {
+        border-top: $sizeA solid $color;
+        border-bottom: $sizeB dotted transparent;
+        border-right: $sizeB dotted transparent;
+    }
+    @else if $align==left-bottom {
+        border-bottom: $sizeA solid $color;
+        border-top: $sizeB dotted transparent;
+        border-right: $sizeB dotted transparent;
+    }
+}
+
+
+/*瀏覽器*/
+
+$lgw: 1450px; //ld
+$mdw: 1000px; //sm
+$sdw: 750px; //ssm
+$ssw: 340px; //ss
+$smw: $ssw+140px; // md
+
+
+$breakpoints: ( 'ld': 'screen and (max-width: #{$lgw})', 'md': 'screen and (max-width: #{$smw})', 'sm': 'screen and (max-width: #{$mdw})', 'ssm': 'screen and (max-width: #{$sdw})','ss': 'screen and (max-width: #{$ssw})');
+@mixin respond-to($name) {
+    @media #{map-get($breakpoints, $name)} {
+        @content;
+    }
+}
+
+@mixin browser-yt($name) {
+    @media (max-width:#{$name}) {
+        iframe[src *="youtube"] {
+            @if $name == $mdw {
+                max-width: 560px;
+		        height: 390px;
+            }
+            @else if $name == $sdw{
+                max-width: 480px;
+		        height: 240px;
+            }
+            @else if $name == $smw{
+                max-width: 360px;
+		        height: 190px;
+            }
+        }
+    }
+}
+
+$browsershack: ( ie8m: \0screen\, screen\9, ie8: \0screen, ie9: 'all and (min-width:0\\0) and (min-resolution: .001dpcm)', ie10p: 'screen and (-ms-high-contrast: active), (-ms-high-contrast: none)', chrome: screen and (-webkit-min-device-pixel-ratio:0), ff: screen and (-moz-images-in-menus:0), edge: '(-ms-accelerator:true)');
+@mixin browser($name) {
+    @if $name==edge {
+        @supports #{map-get($browsershack, $name)} {
+            @content;
+        }
+    }
+    @else {
+        @media #{map-get($browsershack, $name)} {
+            @content;
+        }
+    }
+}
+
+
+$baseFSoffset: 100;
+@mixin px2rem($prop, $values...) {
+    $max: length($values);
+    $remValues: '';
+    @for $i from 1 through $max {
+        $value: nth($values, $i);
+        $remValues: #{$remValues + $value / $baseFSoffset}rem;
+        @if $i < $max {
+            $remValues: #{$remValues + " "};
+        }
+    }
+    #{$prop}: $remValues;
+}
+
+
+/*等分*/
+
+@mixin flex-center {
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex-b {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+
+/*絕對上下左右置中*/
+
+@mixin translate-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@mixin translate-clear {
+    position: static;
+    top: auto;
+    left: auto;
+    -ms-transform: none;
+    transform: none;
+}
+
+
+/*對齊&置中*/
+
+@mixin inb($v: top) {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: $v;
+}
+
+@mixin inner($t: 0, $b: 0) {
+    width: 1000px;
+    margin: $t auto $b;
+}
+
+
+/*動畫*/
+
+@mixin animation($delay, $duration, $animation, $infinite, $forwards, $timing) {
+    animation: $animation $duration $timing $delay $infinite $forwards;
+}
+
+
+/*旋轉*/
+
+@mixin transform($deg) {
+    -ms-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin transform-b($deg, $align:bottom) {
+    -ms-transform-origin: $align;
+    transform-origin: $align;
+    -ms-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+
+/*傾斜*/
+
+@mixin transfrom-skexX($deg, $align:bottom) {
+    -ms-transform-origin: $align;
+    transform-origin: $align;
+    -ms-transform: skewX($deg);
+    transform: skewX($deg);
+}
+
+@mixin transform-x($trans-x) {
+    transform-origin: bottom;
+    transform: skewX($trans-x);
+}
+
+
+/*filter*/
+
+@mixin filter($size, $type:1) {
+    @if $type==1 {
+        -webkit-filter: blur($size);
+        filter: blur($size);
+    }
+    @else if $type==2 {
+        -webkit-filter: brightness($size);
+        filter: brightness($size);
+    }
+    @else if $type==3 {
+        -webkit-filter: grayscale($size);
+        filter: grayscale($size);
+    }
+}
+
+
+/*css*/
+
+@mixin all-inline-block($zoneName, $margin-r:0, $type:1) {
+    &>#{$zoneName} {
+        @if $type==1 {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: $margin-r;
+        }
+        @else if $type==2 {
+            @include flex-b;
+            margin-right: $margin-r;
+        }
+    }
+}
+
+@mixin clearfix($type:both) {
+    &:after,
+    &::after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: $type;
+        visibility: hidden;
+    }
+}
+
