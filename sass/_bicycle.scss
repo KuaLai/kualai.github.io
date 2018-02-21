@@ -13,7 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
-    color: #000;
+    color: #fff;
   }
   
   .back  {
@@ -43,7 +43,7 @@
   }
   
   .spin {
-    color: rgb(105, 105, 105);
+    color: rgb(155, 155, 155);
     animation: cog-spin infinite 1s linear;
   }
   

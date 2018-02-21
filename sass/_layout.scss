@@ -24,8 +24,21 @@ body {
 /*header*/
 
 header {
+    position: relative;
     padding: 10rem 0;
     border-bottom: 1px solid rgb(224, 220, 213);
+    overflow: hidden;
+    color: #fff;
+    &:after,&::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background: rgba(#000,0.5);
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     @include respond-to(ssm) {
         padding: 4rem 0 8rem;
     }
@@ -39,6 +52,19 @@ header {
             display: block;
         }
     }
+    .video {
+        position: absolute;
+        top: -4rem;
+        width: 100%;
+        display: block;
+        z-index: -2;
+        @include respond-to(sm) {
+            top: 0;
+            left: -30%;
+            width: 200%;
+        }
+        
+    }
 }
 
 /*section*/
@@ -48,5 +74,7 @@ section {
 }
 
 .wrap-page {
-
+    .show {
+        
+    }
 }

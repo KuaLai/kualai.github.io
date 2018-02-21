@@ -14,27 +14,23 @@ $("nav li").click(function() {
     var btn_value = $(this).attr('data-url');
     $this.addClass("select").siblings(".select").removeClass("select");
     $(".wrapper").find(".wrap-page").eq(_index).stop(false, true).fadeIn().siblings().hide();
-    
-    // if (btn_value === "about") {
-    //     $body.animate({
-    //         scrollTop: 280
-    //     }, 600);
-    // }
-    // else{
-    //     $body.animate({
-    //         scrollTop: 380
-    //     }, 600);
-    // } 
     location.hash = btn_value;
     return false;
     
   }).find("a").focus(function() {});
+
+// $('[data-url]').click(function() {
+//     var btn_value = $(this).attr('data-url');
+//     $('[data-id]').hide();
+//     $('[data-id="' + btn_value + '"]').fadeIn(400);
+// });
 
 function scrollHd($a){
     $body.animate({
         scrollTop: $a
     }, 600);
 }
+
 function locaurl(){
     if(hash == "#about"){
         d.hide();
