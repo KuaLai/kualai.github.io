@@ -8,7 +8,7 @@ var map = {
 
   stars: {
     template: $("<b></b>"),
-    total: 50,
+    total: 100,
     star: [] //top, left, size, shine time
   }
 };
