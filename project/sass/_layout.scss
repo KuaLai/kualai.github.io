@@ -1,0 +1,298 @@
+$fontStyle02: Arial,'微軟正黑體', '\65B0\7D30\660E\9AD4' ,'黑體', Tahoma, sans-serif;
+%h1Title {
+	display: none;
+	height: 0;
+}
+/*layout*/
+#wrappe-main{
+	width: 1920px;
+	height: 950px;
+	overflow: hidden;
+	position: relative;
+}
+body {
+}
+html{
+    overflow-x: hidden;
+}
+.wrapper{
+	*min-width: 1000px;
+    min-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+}
+#content {
+	position: relative;
+	left: 50%;
+	margin-left: -2880px;
+	width: 7680px;
+	height: 950px;
+}
+#index,#event1,#event2 {
+	width: 1920px;
+	min-height: 950px;
+	*height: 950px;
+	position: relative;
+	float: left;
+    overflow-y: auto;
+}
+#index {
+    
+}
+#event1 {
+}
+
+#wrap-LOL {
+}
+#wrap-AVA {
+}
+/*header*/
+header{
+	h1{
+		@extend %h1Title;
+	}
+}
+
+
+/*nav*/
+nav {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background: rgba(#000, 0.7);
+    @include dc;
+    &:hover {
+    	background: rgba(#000, 0.83);
+    }
+    &.fixd {
+        height: 60px;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        .gameLogo {
+            line-height: 55px;
+            a {
+                width: 131px;
+                margin: 8px 30px 0 30px;
+            }
+        }
+        li {
+            line-height: 55px;
+            font-size: 14px;
+        }
+        .li-08 {
+            padding: 8px 0 7px;
+            a {
+                line-height: 20px;
+            }
+        }
+    }
+    ul {
+        width: 1000px;
+        margin: 0 auto;
+        li {
+            @include dc;
+            font-size: 16px;
+            float: left;
+            text-align: center;
+            line-height: 65px;
+            border-bottom-width: 5px;
+            border-bottom-style: solid;
+            a {
+                color: #fff;
+                width: 100px;
+                &:hover {
+                	color: #cccccc;
+                }
+            }
+            span {
+                display: block;
+            }
+        }
+        .btn_top {
+            border-bottom-color: #ff0006;
+        }
+        .li-02 {
+            border-bottom-color: #ff7a03;
+        }
+        .li-03 {
+            border-bottom-color: #ffff00;
+        }
+        .li-04 {
+            border-bottom-color: #009900;
+        }
+        .li-05 {
+            border-bottom-color: #009cff;
+        }
+        .li-06 {
+            border-bottom-color: #001297;
+        }
+        .li-07 {
+            border-bottom-color: #a400e9;
+        }
+        .li-08 {
+            padding: 9px 0 8px;
+            border-bottom-color: #c0c0c0;
+            a {
+                line-height: 24px;
+            }
+        }
+       .select {
+            a {
+              color: #fff;
+            }
+            &.btn_top {
+              background-color: #ff0006;
+            }
+            &.li-02 {
+              background-color: #ff7a03;
+            }
+            &.li-03 {
+              a {
+                color: #000;
+              }
+              background-color: #ffff00;
+            }
+            &.li-04 {
+              background-color: #009900;
+            }
+            &.li-05 {
+              background-color: #009cff;
+            }
+            &.li-06 {
+              background-color: #001297;
+            }
+          }
+    }
+    h1 {
+        @extend %h1Title;
+    }
+}
+/*brn*/
+#back {
+	display: none;
+	position: fixed;
+	width: 126px;
+	top: 45%;
+	right: 0;
+	cursor: pointer;
+	opacity: 0.5;
+	z-index: 211;
+	@include dc;
+	&:hover {
+		opacity: 1;
+	}
+}
+#back-AVA {
+	display: none;
+	position: fixed;
+	width: 126px;
+	top: 45%;
+	left: 0;
+	cursor: pointer;
+	opacity: 0.5;
+	z-index: 211;
+	@include dc;
+	&:hover {
+		opacity: 0.9;
+	}
+}
+/*section*/
+section {
+	h1 {
+        @extend %h1Title;
+	}
+	h2 {
+		font-family: $fontStyle02;
+		font-weight: bold;
+		font-size: 34px;
+	}
+}
+.mainContent{
+	position: relative;
+	min-height: 500px;
+}
+
+/*faq*/
+.J-faq {
+  .answer {
+    display: none;
+  }
+  .q-title {
+    cursor: pointer;
+    height: 30px;
+    background-color: #8b57b3;
+    padding: 3px 20px;
+  }
+  .J-faq-a {
+    padding: 5px 20px;
+    background-color: rgba(#000, 0.5);
+  }
+  li {
+    margin: 5px 0;
+  }
+  .select {
+    background-color: #5d1a91;
+  }
+  a {
+    display: inline;
+    color: #cc99ff;
+    &:hover {
+      color: #ff6600;
+    }
+  }
+  span {
+    color: #ffcb00;
+  }
+}
+
+/*footer*/
+footer{
+	cursor: pointer;
+	.copyright-s {
+		position: relative;
+		z-index: 103;
+		width: 470px;
+		margin: 0 auto;
+		padding: 0 0 7px 0;
+	}
+	.copyright{
+		position: relative;
+		margin: -60px auto 0;
+		height: 60px;
+		bottom: 20px;
+		z-index: 2;
+		width: 956px;
+		background:transparent url('../img/footer.png') center no-repeat;
+	}
+	.footer-riot {
+		display: inline-block;
+		vertical-align: middle;
+		width:37px;
+		height: 40px;
+	}
+	.footer-garena {
+		display: inline-block;
+		vertical-align: middle;
+		width:68px;
+		height: 40px;
+		padding: 0 0 0 15px;
+	}
+	.footer-fb {
+		display: inline-block;
+		vertical-align: middle;
+		width:30px;
+		height: 40px;
+		position: absolute;
+		right: 0;
+	}
+}
+
+/*for Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}

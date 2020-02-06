@@ -1,0 +1,54 @@
+$fontStyle02: Arial,'微軟正黑體', '\65B0\7D30\660E\9AD4' ,'黑體', Tahoma, sans-serif;
+%h1Title {
+  display: none;
+  height: 0;
+}
+
+#index-notice {
+  background:transparent url("../img/bgc.jpg") center top no-repeat;
+  background-attachment: fixed;
+  min-height: 950px;
+}
+
+/*header*/
+header{
+  position: relative;
+  width: 100%;
+  max-width: 635px;
+  margin: 0 auto;
+  height: 210px;
+  h1{
+    @extend %h1Title;
+  }
+}
+
+.logo {
+  position: absolute;
+  width: 144px;
+  top: 54px;
+  left: 0;
+}
+
+.ss {
+  position: absolute;
+  width: 478px;
+  top: 54px;
+  left: 158px;
+}
+
+
+/*section*/
+
+section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  h1{
+    @extend %h1Title;
+  }
+  .zoneTitle {
+    position: relative;
+    left: 190px;
+    top: 0;
+  }
+}

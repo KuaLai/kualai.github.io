@@ -1,0 +1,150 @@
+.icon-sprite, .icon-cup, .icon-laud, .icon-red-t {
+  background-image: url('../img/icon-s2c1f6483a4.png');
+  background-repeat: no-repeat;
+}
+
+.btn-sprite, .btn-appy-ava-s, .btn-appy-ava, .btn-appy-state-s, .btn-appy-state-ss, .btn-appy-unive-s, .btn-appy-unive-ss {
+  background-image: url('../img/btn-s2cbf922806.png');
+  background-repeat: no-repeat;
+}
+
+.title-sprite, .title-d-01, .title-d-02, .title-d-03, .title-d-04, .title-d-05 {
+  background-image: url('../img/title-s21502f0664.png');
+  background-repeat: no-repeat;
+}
+
+.icon-cup {
+  background-position: 0 0;
+}
+
+.icon-laud {
+  background-position: 0 -67px;
+}
+
+.icon-red-t {
+  background-position: 0 -119px;
+}
+
+.btn-appy-ava-s {
+  background-position: 0 0;
+}
+
+.btn-appy-ava {
+  background-position: 0 -110px;
+}
+
+.btn-appy-state-s {
+  background-position: 0 -220px;
+}
+
+.btn-appy-state-ss {
+  background-position: 0 -330px;
+}
+
+.btn-appy-unive-s {
+  background-position: 0 -440px;
+}
+
+.btn-appy-unive-ss {
+  background-position: 0 -550px;
+}
+
+.title-d-01 {
+  background-position: 0 0;
+}
+
+.title-d-02 {
+  background-position: 0 -58px;
+}
+
+.title-d-03 {
+  background-position: 0 -116px;
+}
+
+.title-d-04 {
+  background-position: 0 -174px;
+}
+
+.title-d-05 {
+  background-position: 0 -233px;
+}
+
+.title-d-01, .title-d-02, .title-d-03, .title-d-04, .title-d-05, .icon-cup, .icon-laud {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-red-t, .btn-appy-state-s, .btn-appy-unive-s, .btn-appy-ava {
+  display: inline-block;
+  vertical-align: middle;
+  width: 267px;
+  height: 90px;
+}
+
+.title-d-01 {
+  width: 163px;
+  height: 38px;
+}
+
+.title-d-02 {
+  width: 168px;
+  height: 38px;
+}
+
+.title-d-03 {
+  width: 204px;
+  height: 38px;
+}
+
+.title-d-04 {
+  width: 165px;
+  height: 39px;
+}
+
+.title-d-05 {
+  width: 163px;
+  height: 38px;
+}
+
+.icon-cup {
+  width: 48px;
+  height: 47px;
+  margin: 0 0 10px 0;
+}
+
+.icon-laud {
+  width: 28px;
+  height: 32px;
+  margin: 0 0 10px 0;
+}
+
+.icon-red-t {
+  width: 56px;
+  height: 55px;
+  padding-bottom: 10px;
+  margin-top: -15px;
+}
+
+.btn-appy-state-s:hover {
+  background-position: 0 -330px;
+}
+.btn-appy-state-s:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-appy-unive-s:hover {
+  background-position: 0 -550px;
+}
+.btn-appy-unive-s:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-appy-ava:hover {
+  background-position: 0 0;
+}
+.btn-appy-ava:active {
+  position: relative;
+  top: 1px;
+}

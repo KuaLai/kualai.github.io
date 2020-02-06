@@ -1,0 +1,108 @@
+.w-AVA {
+    .zone660 {
+      height: 756px;
+        .zoneText {
+            letter-spacing: 0.02em;
+            padding: 0 0 15px 0;
+        }
+        .topBor {
+          padding: 15px 0;
+        }
+        table {
+          text-align: center;
+          margin: 10px 0;
+          border: 1px solid rgba(#803333,0.5);
+          thead {
+            th {
+              width: 190px;
+              padding: 3px 15px;
+              margin: 0 5px;
+              background-color: #8a3333;
+            }
+          }
+          tbody {
+            tr {
+              &:nth-child(even) {
+                background-color: rgba(#ffdada, 0.2);
+              }
+            }
+            td {
+              width: 190px;
+              padding: 5px;
+            }       
+          }
+        }
+        .contentBox {
+          margin: 40px 0 0 0;
+        }
+        .vertical2 {
+          height: 320px;
+        }
+    }
+    .zone630 {
+        h2 {
+          width: 129px;
+          margin: 30px 0 0 0;
+            span {
+                display: none;
+                visibility: hidden;
+            }
+        }
+        .schedule {
+          color: #fff;
+          @include shadow(1px,1px,0px,rgba(#000,0.5));
+          li {
+            margin: 8px 0;
+            &:nth-child(even) {
+              background-color: rgba(#250f02, 0.5);
+            }
+          }
+        }
+    }
+    .zone750 {
+      left: 120px;
+      top: 100px;
+        .psTxt {
+          margin: 15px 0 30px;
+          min-height: 60px;
+        }
+    }
+    .zone780-2 {     
+        h2 {
+            color: #000;
+            @include shadow(1px, 1px, 0px, #fff);
+        }
+        .zoneText {
+            color: #000;
+            font-weight: bold;
+            @include shadow(1px, 1px, 0px, rgba(#fff, 0.4));
+        }
+      }
+    .zone780-3 {
+      left: 120px;
+      top: 60px;
+      color: #fff;
+      h2 {
+        color: #ffcb00;
+        @include shadow(1px, 1px, 0px, rgba(#000, 0.4));
+      }
+    }
+    footer {
+      .copyright {
+        width: 995px;
+        height: 100px;
+        margin: -100px auto 0;
+        background: transparent url("../img/ava-footer.png") center bottom no-repeat;
+      }
+      .footer-fb {
+        right: 20px;
+        top: 20px;
+      }
+      .footer-garena {
+        position: absolute;
+        width: 52px;
+        top: 20px;
+        left: 110px;
+      }
+    }
+}

@@ -1,0 +1,109 @@
+$icon-spacing: 20px;
+$btn-spacing: 20px;
+$title-spacing: 20px;
+
+@import "icon/*.png";
+@import "btn/*.png";
+@import "title/*.png";
+
+@include all-icon-sprites;
+@include all-btn-sprites;
+@include all-title-sprites;
+
+%iconStyle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+%btnStyle {
+	display: inline-block;
+	vertical-align: middle;
+	width: 267px;
+	height: 90px;
+}
+
+
+.title-d-01 {
+	@extend %iconStyle;
+	width: 163px;
+	height: 38px;
+}
+
+.title-d-02 {
+	@extend %iconStyle;
+	width: 168px;
+	height: 38px;
+}
+
+.title-d-03 {
+	@extend %iconStyle;
+	width: 204px;
+	height: 38px;
+}
+
+.title-d-04 {
+	@extend %iconStyle;
+	width: 165px;
+	height: 39px;
+}
+
+.title-d-05 {
+	@extend %iconStyle;
+	width: 163px;
+	height: 38px;
+}
+
+.icon-cup {
+	@extend %iconStyle;
+	width: 48px;
+	height: 47px;
+	margin: 0 0 10px 0;
+}
+
+.icon-laud {
+	@extend %iconStyle;
+	width: 28px;
+	height: 32px;
+	margin: 0 0 10px 0;
+}
+
+.icon-red-t {
+	@extend %btnStyle;
+	width: 56px;
+	height: 55px;
+	padding-bottom: 10px;
+    margin-top: -15px;
+}
+.btn-appy-state-s {
+	@extend %btnStyle;
+	&:hover {
+		background-position: 0 -330px;
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}
+
+.btn-appy-unive-s {
+	@extend %btnStyle;
+	&:hover {
+		background-position: 0 -550px;
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}
+
+.btn-appy-ava {
+	@extend %btnStyle;
+	&:hover {
+		background-position: 0 0;
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}
+

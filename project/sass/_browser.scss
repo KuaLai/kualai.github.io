@@ -1,0 +1,42 @@
+$width-small: 320px;
+$width-medium: 1025px;
+$width-large: 1400px;
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: $width-large) {
+	.rightNav {
+		right: 1.5%;
+	}
+}
+
+@media only screen and (max-width: $width-medium) {
+	.rightNav {
+		display: none;
+	}
+	
+	.zoneGifts .zoneExcg {
+		display: block;
+	}
+	.zoneGifts .e-skinBox {
+		float: left;
+	}
+
+}
+
+@media only screen and (max-width: $width-small) {}
+@media only screen and (max-width: 1240px) {
+	.eventInfo, .eventNote, .eventNotice {
+		margin: -150px 0 0 -200px;
+	}
+	.attrPage .pageBg {
+		margin: 50px 150px;
+	}
+	.zoneSynt .c-skin label {
+		width: 188px;
+	}
+}
+
+/*for Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}

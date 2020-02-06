@@ -1,0 +1,21 @@
+.cscroll-filter{position:relative;*zoom:1;overflow: auto;}
+.cscroll-main{position:relative;left:0;top:0;*zoom:1;}
+.cscroll-bar{position:absolute;*zoom:1;z-index: 5;}
+.cscroll-bar__track{cursor:pointer;position:absolute;} 
+.cscroll-bar__thumb{cursor:pointer;position:absolute;left: 1px;top:0;_font-size: 0}
+.cscroll-bar__prevbtn{}
+.cscroll-bar__nextbtn{}
+
+.vertical2{ width: 590px;height: 250px; margin: 10px; padding: 0 15px 15px 0}
+.vertical2 .cscroll-main{margin: 0 30px 0 0}
+.vertical2 .cscroll-bar{width: 1px;height: 100%;top: 0px;right: 25px;background:#be6b6b;}
+.vertical2 .cscroll-bar__track{width: 9px;left: -4px;height: 100%}
+.vertical2 .cscroll-bar__thumb{width: 6px;background:#be6b6b;}
+
+.message{word-break:break-all;}
+
+.vertical{ width: 750px;height: 240px; margin: 20px; padding: 0 15px 15px 0}
+.vertical .cscroll-main{margin: 0 30px 0 0}
+.vertical .cscroll-bar{width: 1px;height: 100%;top: 0px;right: 25px;background:#14b4ff;}
+.vertical .cscroll-bar__track{width: 9px;left: -4px;height: 100%}
+.vertical .cscroll-bar__thumb{width: 6px;background:#14b4ff;}

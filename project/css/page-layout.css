@@ -1,0 +1,73 @@
+/*
+Error: File to import not found or unreadable: notice.
+       Load paths:
+         Compass::SpriteImporter
+         D:/04.web/201512/1221/sass
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/susy-2.1.3/sass
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/compass-normalize-1.5/stylesheets
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.2/stylesheets
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/html5-boilerplate-2.1.0/stylesheets
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/sassy-maps-0.4.0/sass
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/breakpoint-2.5.0/stylesheets
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-5.3.0/stylesheets
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/fire-app-example/stylesheets
+         C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets
+        on line 2 of D:/04.web/201512/1221/sass/page-layout.scss
+
+1: @import "mixins";
+2: @import "notice";
+3: @import "skinCg";
+4: @import "browser";
+
+Backtrace:
+D:/04.web/201512/1221/sass/page-layout.scss:2
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:66:in `import'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:64:in `import'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:36:in `css_import?'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+org/jruby/RubyArray.java:2412:in `map'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `render'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+org/jruby/RubyMethod.java:128:in `call'
+file:/C:/Users/laiku.GARENANET/Desktop/fire.app/fire-app.jar!/hook/compass_patch.rb:132:in `update_stylesheet'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+org/jruby/RubyArray.java:1613:in `each'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `watch'
+org/jruby/RubyProc.java:271:in `call'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/jruby/listen-1.3.1/lib/listen/listener.rb:252:in `on_change'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/jruby/listen-1.3.1/lib/listen/listener.rb:290:in `initialize_adapter'
+org/jruby/RubyProc.java:271:in `call'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/jruby/listen-1.3.1/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/jruby/listen-1.3.1/lib/listen/adapter.rb:297:in `start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: notice.\A        Load paths:\A          Compass::SpriteImporter\A          D:/04.web/201512/1221/sass\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/susy-2.1.3/sass\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/compass-normalize-1.5/stylesheets\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/compass-h5bp-0.1.2/stylesheets\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/html5-boilerplate-2.1.0/stylesheets\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/sassy-maps-0.4.0/sass\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/breakpoint-2.5.0/stylesheets\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-5.3.0/stylesheets\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/fire-app-example/stylesheets\A          C:/Users/laiku.GARENANET/Desktop/fire.app/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets\A         on line 2 of D:/04.web/201512/1221/sass/page-layout.scss\A \A 1: @import \"mixins\";\A 2: @import \"notice\";\A 3: @import \"skinCg\";\A 4: @import \"browser\";"; }

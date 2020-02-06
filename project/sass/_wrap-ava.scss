@@ -1,0 +1,95 @@
+.w-AVA {
+    background: transparent url('../img/bg-a-01.jpg') center top no-repeat;
+    .gameLogo {
+        border: none;
+        line-height: 65px;
+        a {
+            width: 137px;
+            margin: 15px 60px 0 20px;
+        }
+    }
+    .fixd {
+        .gameLogo {
+            a {
+                width: 125px;
+                margin: 8px 60px 0 40px;
+            }
+        }   
+    }
+    section {
+        width: 100%;
+    }
+    .mainContent {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+.img-riot {
+  display: inline-block;
+  vertical-align: middle;
+  width: 43px;
+  height: 39px;
+}
+
+.btn-ss {
+  position: absolute;
+  z-index: 11;  
+  width: 273px;
+  right: 100px;
+  top: 80px;
+}
+.btn-sh {
+    position: absolute;
+    z-index: 11;  
+    width: 184px;
+    right: 100px;
+    top: -10px; 
+}
+
+
+/*section*/
+.w-AVA {
+    section {
+        height: 839px;
+    }
+    .ava-01 {
+        height: 886px;
+    }
+    .ava-06 {
+        height: 780px;
+    }
+    .q-title {
+        background-color: #2d2d86;
+    }
+    .select {
+        background-color: #000033;
+  }
+}
+
+.ava-01 {   
+    h2 {
+        color: #ffff00;
+        font-size: 34px;
+    }
+}
+
+.ava-02 {
+    background: transparent url('../img/bg-a-02.jpg') center top no-repeat;
+}
+
+.ava-03 {
+    background: transparent url('../img/bg-a-03.jpg') center top no-repeat;
+}
+
+.ava-04 {
+    background: transparent url('../img/bg-a-04.jpg') center top no-repeat;
+}
+
+.ava-05 {
+    background: transparent url('../img/bg-a-05.jpg') center top no-repeat;
+}
+
+.ava-06 {
+    background: transparent url('../img/bg-a-06.jpg') center top no-repeat;
+}

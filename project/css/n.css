@@ -1,0 +1,62 @@
+html,body{
+	/*overflow-y: hidden;*/
+	/*overflow-x: visible;*/
+
+	/*height: 993px;*/
+}
+
+#main{
+	overflow: hidden;
+	position: relative;
+	height: 993px;
+	/*height: 950px;*/
+	/*min-width: 1000px;*/
+}
+
+#content{	
+	height: auto;
+	min-width: 1000px;
+/*	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 1920px;
+	margin: 0 0 0 -960px;*/
+
+	width: 100%;
+	position: relative;
+	left: 0;
+	margin: 0;
+
+	overflow: hidden;
+
+	/*height: 5000px;*/
+}
+
+.content-f{
+	font-size: 0;
+	white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+	width: 100%;
+	
+}
+
+#index, #event1, #event2{
+	min-height: 0;
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: top;
+	float: none;
+	white-space: normal;
+	font-size: 13px;
+
+	width: 100%;
+	min-width: 1000px;
+}
+
+.wrapper{
+	position: relative;
+	min-width: 0;
+}

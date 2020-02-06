@@ -1,0 +1,80 @@
+.wrapper {
+    min-height: 1200px;
+}
+
+.w-LOL {
+    background: transparent url('../img/bg01.jpg') center top no-repeat;
+    .gameLogo {
+        border: none;
+        line-height: 65px;
+        a {
+            width: 151px;
+            margin: 10px 20px 0 20px;
+        }
+    }
+    section {
+        width: 100%;
+    }
+    .mainContent {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+.img-riot {
+  display: inline-block;
+  vertical-align: middle;
+  width: 43px;
+  height: 39px;
+}
+
+.btn-ss {
+  position: absolute;
+  z-index: 11;  
+  width: 273px;
+  right: 100px;
+  top: 80px;
+}
+.btn-sh {
+    position: absolute;
+    z-index: 11;  
+    width: 184px;
+    right: 100px;
+    top: -10px; 
+}
+
+
+/*section*/
+
+.lol-01 {
+    height: 871px;
+    h2 {
+        color: #ffff00;
+        font-size: 34px;
+    }
+}
+
+.lol-02 {
+    background: transparent url('../img/bg02.jpg') center top no-repeat;
+    height: 776px;
+}
+
+.lol-03 {
+    background: transparent url('../img/bg03.jpg') center top no-repeat;
+    height: 809px;
+}
+
+.lol-04 {
+    background: transparent url('../img/bg04.jpg') center top no-repeat;
+    height: 706px;
+}
+
+.lol-05 {
+    background: transparent url('../img/bg05.jpg') center top no-repeat;
+    height: 858px;
+}
+
+.lol-06 {
+    background: transparent url('../img/bg06.jpg') center top no-repeat;
+    height: 800px;
+}

@@ -1,0 +1,78 @@
+header h1, section h1 {
+  display: none;
+  height: 0;
+}
+
+#index-notice {
+  background: transparent url("../img/bgc.jpg") center top no-repeat;
+  background-attachment: fixed;
+  min-height: 950px;
+}
+
+/*header*/
+header {
+  position: relative;
+  width: 100%;
+  max-width: 635px;
+  margin: 0 auto;
+  height: 210px;
+}
+
+.logo {
+  position: absolute;
+  width: 144px;
+  top: 54px;
+  left: 0;
+}
+
+.ss {
+  position: absolute;
+  width: 478px;
+  top: 54px;
+  left: 158px;
+}
+
+/*section*/
+section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+section .zoneTitle {
+  position: relative;
+  left: 190px;
+  top: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .rightNav {
+    right: 1.5%;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .rightNav {
+    display: none;
+  }
+
+  .zoneGifts .zoneExcg {
+    display: block;
+  }
+
+  .zoneGifts .e-skinBox {
+    float: left;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .eventInfo, .eventNote, .eventNotice {
+    margin: -150px 0 0 -200px;
+  }
+
+  .attrPage .pageBg {
+    margin: 50px 150px;
+  }
+
+  .zoneSynt .c-skin label {
+    width: 188px;
+  }
+}
+/*for Chrome*/

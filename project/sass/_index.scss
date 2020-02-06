@@ -1,0 +1,199 @@
+.wrapper {
+	min-height: 1200px;
+	background:transparent url('../img/bg.jpg') center top no-repeat;
+}
+header {
+	position: relative;
+  z-index: 211;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+  height: 365px;
+  //@include animation(1.4s,0.3s,shake,1 , forwards,ease-in-out);
+}
+.logo {
+  opacity: 0;
+  width: 225px;
+  margin: 0px auto;
+  padding: 15px 0 0 0;
+  @include animation(1.2s,0.1s,fadeInDownBig,1 , forwards,ease-in-out);
+}
+.ss {
+  position: absolute;
+  z-index: 3;
+	width: 611px;
+  top: 220px;
+  left: 190px;  
+  @include animation(0,1.2s,fadeInDown,1, both,ease-in-out);
+}
+.slogin {
+  position: absolute;
+  opacity: 0;
+  z-index: 3;
+  right: -220px;
+  top: 320px;
+  width: 518px;
+  @include animation(1.8s,0.2s,bounceIn,1, forwards,ease-in-out);
+}
+
+.bgsss {
+  position: absolute;
+  z-index: 1;
+  top: -365px;
+  left: -250px;
+  width: 1488px;
+  &:before,&::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 1488px;
+    height: 700px;
+    background:transparent url('../img/mask.png') -210px 0 no-repeat;
+  }
+}
+/*section*/
+.mainContent{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  .btnGame {
+    position: relative;
+    width: 846px;
+    height: 101px;
+    margin: 0 auto 40px;
+    a {
+      width: 433px;
+      height: 101px;
+    }
+    .btn-lol {
+      position: absolute;
+      width: 433px;
+      left: 0;
+      background:transparent url('../img/ssGame-r.png') right top no-repeat;
+      @include dc;
+      &:hover {
+        width: 483px;
+        left: -50px;
+      }
+    }
+    .btn-ava {
+      position: absolute;
+      width: 433px;
+      left: 413px;
+      background:transparent url('../img/ssGame-p.png') left top no-repeat;
+      @include dc;
+      a {
+        @include dc;
+      }
+      &:hover {
+        width: 483px;
+        a {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+  .zoneVideo {
+    position: relative;
+    z-index: 2;
+    width: 545px;
+    height: 330px;
+    margin: 0 auto 43px;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px solid #312626;
+    .btn-video {
+      width: 530px;
+      margin: 8px auto;
+      cursor: pointer;
+    }
+  }
+  .zoneInfo {
+    width: 680px;
+    height: 520px;
+    margin: 0 auto;
+    font-size: 15px;
+    .zoneContent {
+      position: relative;
+      margin: 0 0 25px 0;
+      .title-d-03 {
+        margin: 15px 0 0;
+      }
+      .zoneTxt {
+        position: absolute;
+        left: 153px;
+        top: 20px;
+        span {
+          font-size: 13px;
+          color: #fff;
+          padding: 5px 15px;
+          margin: 0 10px 0 0;
+          background-color: #000000;
+        }
+      }
+    }
+    .zoneBox {
+      position: relative;
+      width: 631px;
+      padding: 7px;
+      margin: 25px 0 5px;
+      background: rgba(#fff, 0.65);
+      border: 1px solid #7b7b7b;
+      @include radius(20px);
+      .bor {
+        float: left;
+        width: 3px;
+        margin: 15px 0 0 0;
+      }
+      .box-pic {        
+        float: left;
+        width: 123px;
+      }
+      .zoneBonus {
+        float: left;
+        width: 150px;
+        padding: 15px 20px;
+        color: #312626;
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        span {
+          font-size: 13px;
+          background-color: #312626;
+          color: #fff;
+          padding: 5px 15px;
+          margin: 0 15px 5px 0;
+        }
+      }
+      .btn-norice {
+        position: absolute;
+        right: -30px;
+        bottom: 20px;
+        font-size: 13px;
+        line-height: 15px;
+        color: #fff;
+        background-color: #c4313c;
+        padding: 12px 8px;
+        &:hover {
+          @include dc;
+          background-color: #620a62;
+        }
+      }
+    }
+    .zoneLogo {
+      position: absolute;
+      left: 153px;
+      top: 20px;
+      .logo-asus {
+        width: 162px;
+      }
+      li {
+        width: 82px;
+        float: left;
+        line-height: 34px;
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+}
+

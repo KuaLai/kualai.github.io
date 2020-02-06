@@ -1,0 +1,105 @@
+.pop-wrap{z-index:10000002;}
+.pop-inner{background:#6D6B6B;border-radius:5px;}
+.pop-gctrl{position:absolute;left:8px;top:6px;}
+.pop-close,.pop-prev,.pop-next,.pop-expand{width:20px;height:20px;position:absolute;cursor:pointer;z-index:1;background-repeat:no-repeat;}
+.pop-expand{background-position:-42px 0;right:33px;visibility:hidden;display:block;text-decoration:none;top:6px;}
+.pop-prev{background-position:0 0;left:0;top:0;}
+.pop-next{background-position:-21px 0;left:25px;top:0}
+.pop-loader{width:32px;height:32px;position:absolute;background-image:url(../img/poploader.gif);left:50%;top:50%;z-index:1;margin:-16px 0 0 -16px;overflow:hidden;}
+.pop-error{text-align:center;color:#fff;}
+@media screen\0 {
+  .nav-sub-w {
+    background: url(data:);
+  }
+}
+
+.pop-wrap {
+  -webkit-transform: translateZ(0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000002;
+  width: 100%;
+  height: 100%;
+  /*overflow:hidden;*/
+  _position: absolute;
+  display: none;
+}
+.pop-inner {
+  position: relative;
+  top: 50%;
+  _top: 0;
+  zoom: 1;
+  background: url(../img/popup-bg.png);
+  background-repeat:no-repeat;
+  background-position: center top;
+}
+.pop-content {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+.pop-masklayer {
+  -webkit-transform: translateZ(0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000001;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  _position: absolute;
+  opacity: .8;
+  display: none;
+}
+@media \0screen\,screen\9 {
+  .pop-masklayer {
+    filter: alpha(opacity=80);
+  }
+}
+.pop-close {
+  display: none;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 111;
+  top: 160px;
+  right: 100px;
+  opacity: 0.8;
+  &:hover {
+        opacity: 1;
+    }
+}
+.main-contents-wrapper {
+  display: none;
+}
+.main-contents{
+  width: 530px;
+  height: 445px;
+  position: relative;
+}
+
+
+.main-contents__txt dt{
+	background:#336600;
+	border-radius: 20px;
+	float: left;
+	color:#FFF;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 5px;
+	padding-bottom: 0;
+	padding-left: 5px;
+}
+
+.main-contents__txt p{
+	color:#336600;
+  line-height: 20px;
+	
+}
+
+

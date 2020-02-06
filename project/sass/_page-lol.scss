@@ -1,0 +1,253 @@
+.zone660 {
+    position: absolute;
+    right: 46px;
+    width: 600px;
+    height: 741px;
+    padding: 100px 30px 30px 30px;
+    background-color: rgba(#340000, 0.8);
+    color: #fff;
+    font-size: 15px;
+    h2 span {
+        color: #fff;
+        font-size: 18px;
+        margin: 0 0 0 10px;
+    }
+    .packet {
+        display: inline-block;
+        padding: 5px 20px;
+        margin: 20px 10px 20px 0;
+        border: 1px solid #fff;
+        background-color: rgba(#000, 0.5);
+    }
+    .psTxt {
+        display: block;
+        width: 370px;
+        color: #ffff00;
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    .exTxt {
+        color: #ffff00;
+        line-height: 18px;
+        margin: 15px 0;
+    }
+    .psList {
+        font-size: 12px;
+        color: #999999;
+    }
+    .topBor {
+        border-top: 1px solid #ff6666;
+        width: 558px;
+        padding: 20px 0;
+    }
+    .contentBox {
+        font-size: 13px;
+        border: 1px solid #803333;
+        background-color: rgba(#000, 0.5);
+        @include radius(10px);
+        .zoneTitle {
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 15px;
+            color: #fff;
+            background-color: rgba(#ff6666, 0.5);
+            @include radius(10px 10px 0px 0px);
+        }
+        .subTitle {
+            font-size: 15px;
+            border: 1px solid #ffcccc;
+            color: #ffcccc;
+            padding: 2px 10px;
+            margin: 10px 0;
+            display: inline-block;
+        }
+    }
+}
+
+.zone630 {
+    position: absolute;
+    width: 630px;
+    top: 80px;
+    left: 100px;
+    color: #312626;
+    h2 {
+        span {
+            display: block;
+            color: #fff;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    .psTxt {
+        font-size: 12px;
+        color: #fff;
+        padding: 15px;
+        background-color: rgba(#000, 0.6);
+    }
+    .schedule {
+        margin: 45px 0 25px 0;
+        li {
+            padding: 5px 15px;
+            &:nth-child(odd) {
+                background-color: rgba(#7d2f00, 0.5);
+            }
+        }
+    }
+    .btnBox {
+        margin: 15px auto;
+        text-align: center;
+        a {
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            background-color: #7d2f00;
+            width: 234px;
+            height: 60px;
+            line-height: 60px;
+            margin: 10px;
+        }
+    }
+}
+
+.zone780 {
+    position: absolute;
+    width: 780px;
+    right: 0;
+    top: 110px;
+    font-size: 15px;
+}
+
+.zoneReward {
+    padding: 15px;
+    margin: 0 0 60px 0;
+    background-color: rgba(#411a00, 0.8);
+    .zoneIcon {
+        display: inline-block;
+        vertical-align: middle;
+        color: #ffcc00;
+        width: 110px;
+        height: 83px;
+        border: 1px solid #ffcc00;
+        text-align: center;
+        padding: 15px 0 0 0;
+        margin: 0 15px 0 0;
+        span {
+            display: block;
+            line-height: 18px;
+        }
+    }
+    .zoneTxt {
+        display: inline-block;
+        vertical-align: middle;
+        width: 590px;
+        color: #fff;
+        line-height: 22px;
+    }
+    .zoneReward-main {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: #330000;
+        background-color: rgba(#ffcc00, 0.5);
+        height: 54px;
+        line-height: 54px;
+        margin: 15px 0 0 0;
+        span {
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+    }
+}
+
+.zone750 {
+    position: absolute;
+    width: 750px;
+    left: 192px;
+    top: 50px;
+    color: #fff;
+    h2 {
+        color: #ffcb00;
+    }
+    .zoneText {
+        font-size: 15px;
+        margin: 10px 0 30px;
+        p {
+            width: 635px;
+        }
+        span {
+            color: #ffcb00;
+            font-size: 18px;
+            padding: 0 5px;
+        }
+    }
+    .zoneDatabase {
+        position: relative;
+    }
+    .zoneDatabase-main {
+        width: 358px;
+        margin: 0 auto;
+    }
+    .btn-chick {
+        position: absolute;
+        width: 95px;
+        right: 160px;
+        top: 20px;
+    }
+    .psTxt {
+        font-size: 13px;
+        padding: 25px;
+        background-color: rgba(#000, 0.5);
+        @include radius(10px);
+    }
+}
+
+.zone780-2 {
+    top: 80px;
+    left: 100px;
+    right: inherit;
+    color: #fff;
+    h2 {
+        color: #ffcb00;
+        @include shadow(1px,1px,0px,#000);
+    }
+    .btnBox {
+      text-align: center;
+      margin: 25px 0;
+      a {
+        margin: 0 30px;
+      }
+    }
+    .contentBox {
+        font-size: 13px;
+        background-color: rgba(#000, 0.5);
+        padding: 0 0 10px 0;
+        @include radius(10px);
+        .zoneTitle {
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 15px;
+            color: #0050af;
+            background-color: #14b4ff;
+            @include radius(10px 10px 0px 0px);
+        }
+        .subTitle {
+            font-size: 15px;
+            border: 1px solid #ffcccc;
+            color: #ffcccc;
+            padding: 2px 10px;
+            margin: 10px 0;
+            display: inline-block;
+        }
+    }
+    .psTxt {
+        display: block;
+        color: #ffff00;
+        font-size: 13px;
+        line-height: 18px;
+        margin: 15px 0;
+    }
+}
+
